@@ -40,7 +40,6 @@ return x==y;
 ```
 
 #### III. Decided Reason 
-The result of a floating-point comparison, as determined by the specification of the IEEE 754 standard, is:
 Floating-point equality testing is performed in accordance with the rules of the IEEE 754 standard:
 * If either operand is NaN, then the result of == is false but the result of != is true. Indeed, the test x!=x is true if and only if the value of x is NaN. The methods Float.isNaN and Double.isNaN may also be used to test whether a value is NaN.
 * Positive zero and negative zero are considered equal. For example, -0.0==0.0 is true.
