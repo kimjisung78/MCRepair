@@ -1,0 +1,122 @@
+# Closure 2 - Type 3 (T1B / T2F, T3F)
+
+## 1. Developer's patch
+* `-`: A fixed and deleted location
+* `+`: A fixed and added location
+```java
+src/com/google/javascript/jscomp/TypeCheck.java: 1570-1574
+    ObjectType implicitProto = interfaceType.getImplicitPrototype();
+    Set<String> currentPropertyNames;
++   if (implicitProto == null) {
+    // This can be the case if interfaceType is proxy to a non-existent
+    // object (which is a bad type annotation, but shouldn't crash).
++       currentPropertyNames = ImmutableSet.of();
++   } else {
+        currentPropertyNames = implicitProto.getOwnPropertyNames();
++   }
+```
+<br>
+
+## 2. Used chunks and locations - 1 chunk / 1 location
+```java
+src/com/google/javascript/jscomp/TypeCheck.java: 1574
+currentPropertyNames = implicitProto.getOwnPropertyNames();
+```
+<br>
+
+## 3. Correct combined patches per bug type
+* T2F: 6, 19
+* T3F: 81, 267, 278, 289, 300
+<br><br>
+
+## 4. Examples of correct patches
+### 4.1. 6th patch - T2F
+#### I. Fixed Result
+```java
+src/com/google/javascript/jscomp/TypeCheck.java: 1574
++   if (implicitProto == null) { 
++      return; 
++   } 
+    currentPropertyNames = implicitProto . getOwnPropertyNames ( ) ;
+```
+
+#### II. Fixed chunks and locations - 1 chunk / 3 locations
+```java
+src/com/google/javascript/jscomp/TypeCheck.java: 1574
+Three locations were inserted in front of location 1574.
+```
+
+#### III. Decided Reason
+To fix the bug, it must check or handle null about ```implicitProto```. The patch checked the null. 
+<br>
+
+### 4.2. 81st patch - T3F
+#### I. Fixed Result
+```java
+src/com/google/javascript/jscomp/TypeCheck.java: 1574
++   try { 
+        currentPropertyNames = implicitProto . getOwnPropertyNames ( ) ;
+```
+
+```java
+src/com/google/javascript/jscomp/TypeCheck.java: 1588-1591
+    for (ObjectType iType : interfaceType.getCtorExtendedInterfaces()) {
+        checkInterfaceConflictProperties(t, n, functionName, properties,
+            currentProperties, iType);
+-   }
++   } catch (Exception e) { 
++       e.printStackTrace(); 
++   }
+```
+
+#### II. Fixed chunks and locations - 2 chunks / 4 locations
+```java
+src/com/google/javascript/jscomp/TypeCheck.java: 1574
+A location was inserted in front of location 1574.
+```
+
+```java
+src/com/google/javascript/jscomp/TypeCheck.java: 1591
+-   }
++   } catch (Exception e) { 
++       e.printStackTrace(); 
++   }
+```
+
+#### III. Decided Reason
+To fix the bug, it must check or handle null about ```implicitProto```. The patch handled the null.
+<br><br>
+
+### 4.3. 300th patch - T3F
+#### I. Fixed Result
+```java
+src/com/google/javascript/jscomp/TypeCheck.java: 1574
++   if (implicitProto != null) {  
+        currentPropertyNames = implicitProto . getOwnPropertyNames ( ) ;
+```
+
+```java
+src/com/google/javascript/jscomp/TypeCheck.java: 1588-1592
+        for (ObjectType iType : interfaceType.getCtorExtendedInterfaces()) {
+                checkInterfaceConflictProperties(t, n, functionName, properties,
+                    currentProperties, iType);
+            }
++       }  
+    }
+```
+
+#### II. Fixed chunks and locations - 2 chunks / 2 locations
+```java
+src/com/google/javascript/jscomp/TypeCheck.java: 1574
+A location was inserted in front of location 1574.
+```
+
+```java
+src/com/google/javascript/jscomp/TypeCheck.java: 1592
+A location was inserted in front of location 1592.
+```
+
+#### III. Decided Reason
+To fix the bug, it must check or handle null about ```implicitProto```. The patch checked the null and avoided it. 
+<br><br>
+

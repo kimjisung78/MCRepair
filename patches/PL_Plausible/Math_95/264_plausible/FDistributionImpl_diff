@@ -1,0 +1,18 @@
+--- "/home/selab/\353\260\224\355\203\225\355\231\224\353\251\264/APR_Resources/repair/combination_patches/Math_95/264/FDistributionImpl_Origin.java"	2022-07-18 13:37:45.916081909 +0900
++++ "/home/selab/\353\260\224\355\203\225\355\231\224\353\251\264/APR_Resources/repair/combination_patches/Math_95/264/FDistributionImpl.java"	2022-07-18 13:37:45.920081933 +0900
+@@ -140,14 +140,7 @@
+      * @param p the desired probability for the critical value
+      * @return initial domain value
+      */
+-    protected double getInitialDomain(double p) {
+-        double ret;
+-        double d = getDenominatorDegreesOfFreedom();
+-            // use mean
+-            ret = d / (d - 2.0);
+-        return ret;
+-    }
+-    
++protected double getInitialDomain ( double p ) { double d = getDenominatorDegreesOfFreedom ( ) ; double ret = d / ( d - 2.0 ) ; ret = 1 ; return ret ; }    
+     /**
+      * Modify the numerator degrees of freedom.
+      * @param degreesOfFreedom the new numerator degrees of freedom.

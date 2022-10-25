@@ -1,0 +1,67 @@
+--- "/home/selab/\353\260\224\355\203\225\355\231\224\353\251\264/APR_Resources/repair/combination_patches/Math_18/8824/CMAESOptimizer_Origin.java"	2022-07-18 13:10:34.041926231 +0900
++++ "/home/selab/\353\260\224\355\203\225\355\231\224\353\251\264/APR_Resources/repair/combination_patches/Math_18/8824/CMAESOptimizer.java"	2022-07-18 13:10:34.045926295 +0900
+@@ -922,18 +922,7 @@
+          * @param x Original objective variables.
+          * @return the normalized objective variables.
+          */
+-        public double[] encode(final double[] x) {
+-            if (boundaries == null) {
+-                return x;
+-            }
+-            double[] res = new double[x.length];
+-            for (int i = 0; i < x.length; i++) {
+-                double diff = boundaries[1][i] - boundaries[0][i];
+-                res[i] = (x[i] - boundaries[0][i]) / diff;
+-            }
+-            return res;
+-        }
+-
++public double [ ] encode ( final double [ ] x ) { if ( boundaries == null ) { return x ; } double [ ] res = new double [ x . length ] ; for ( int i = 0 ; i < x . length ; i ++ ) { double diff = boundaries [ 1 ] [ i ] - boundaries [ 0 ] [ i ] ; res [ i ] = ( x [ i ] ) / diff ; } return res ; }
+         /**
+          * @param x Normalized objective variables.
+          * @return the original objective variables, possibly repaired.
+@@ -948,18 +937,7 @@
+          * @param x Normalized objective variables.
+          * @return the original objective variables.
+          */
+-        public double[] decode(final double[] x) {
+-            if (boundaries == null) {
+-                return x;
+-            }
+-            double[] res = new double[x.length];
+-            for (int i = 0; i < x.length; i++) {
+-                double diff = boundaries[1][i] - boundaries[0][i];
+-                res[i] = diff * x[i] + boundaries[0][i];
+-            }
+-            return res;
+-        }
+-
++public double [ ] decode ( final double [ ] x ) { if ( boundaries == null ) { return x ; } double [ ] res = new double [ x . length ] ; for ( int i = 0 ; i < x . length ; i ++ ) { double diff = boundaries [ 1 ] [ i ] - boundaries [ 0 ] [ i ] ; res [ i ] = diff * x [ i ] ; } return res ; }
+         /**
+          * @param point Normalized objective variables.
+          * @return the objective value + penalty for violated bounds.
+@@ -982,23 +960,7 @@
+          * @param x Normalized objective variables.
+          * @return {@code true} if in bounds.
+          */
+-        public boolean isFeasible(final double[] x) {
+-            if (boundaries == null) {
+-                return true;
+-            }
+-
+-
+-            for (int i = 0; i < x.length; i++) {
+-                if (x[i] < 0) {
+-                    return false;
+-                }
+-                if (x[i] > 1.0) {
+-                    return false;
+-                }
+-            }
+-            return true;
+-        }
+-
++public boolean isFeasible ( final double [ ] x ) { if ( boundaries == null ) { return true ; } else if ( boundaries == null ) { return true ; } for ( int i = 0 ; i < x . length ; i ++ ) { if ( x [ i ] < 0 ) { return false ; } if ( x [ i ] > 1.0 ) { return false ; } } return true ; }
+         /**
+          * @param valueRange Adjusts the penalty computation.
+          */

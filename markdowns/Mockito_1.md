@@ -1,0 +1,133 @@
+# Mockito - Type 2 (T1B / T2F)
+
+## 1. Developer's patch
+* `-`: A fixed and deleted location
+* `+`: A fixed and added location
+```java
+src/org/mockito/internal/invocation/InvocationMatcher.java: 121-125
+    if (invocation.getMethod().isVarArgs()) {
+    int indexOfVararg = invocation.getRawArguments().length - 1;
++   for (int position = 0; position < indexOfVararg; position++) {
+-       throw new UnsupportedOperationException();
++       Matcher m = matchers.get(position);
++       if (m instanceof CapturesArguments) {
++           ((CapturesArguments) m).captureFrom(invocation.getArgumentAt(position, Object.class));
++       }
++   }
++   for (int position = indexOfVararg; position < matchers.size(); position++) {
++       Matcher m = matchers.get(position);
++       if (m instanceof CapturesArguments) {
++           ((CapturesArguments) m).captureFrom(invocation.getRawArguments()[position - indexOfVararg]);
++       }
++   }
+
+    } else {
+```
+<br>
+
+## 2. Used chunks and locations - 1 chunk / 1 location
+```java
+src/org/mockito/internal/invocation/InvocationMatcher.java: 123
+throw new UnsupportedOperationException();
+```
+<br>
+
+## 3. Correct combined patches per bug type
+* T2F: 206, 366
+<br><br>
+
+## 4. Examples of correct patches
+### 4.1. 206th patch - T1F
+#### I. Fixed Result
+```java
+src/org/mockito/internal/invocation/InvocationMatcher.java: 123
++   if (indexOfVararg < 0)
+    throw new UnsupportedOperationException();
+```
+
+#### II. Fixed chunks and locations - 1 chunk / 1 location
+```java
+src/org/mockito/internal/invocation/InvocationMatcher.java: 123
+A location was inserted in front of Location 123.
+```
+
+### III. Decided Reason
+Since the bug throws ```UnsupportedOperationException``` without checking ```indexOfVararg``` variable, the bug is occured. Therefore, to fix the bug, the bug must be changed that it checks the variable and throws the exception. Also, the patch removed all the failing testcases as follows.
+```
+--- Failing Test ---
+org.mockito.internal.invocation.InvocationMatcherTest:should_capture_arguments_when_args_count_does_NOT_match
+    java.lang.UnsupportedOperationException:
+org.mockito.internal.util.reflection.FieldInitializerTest:can_instantiate_class_with_parameterized_constructor
+    java.lang.UnsupportedOperationException:
+org.mockito.internal.util.reflection.ParameterizedConstructorInstantiatorTest:should_report_failure_if_constructor_throws_exception
+    java.lang.UnsupportedOperationException:
+org.mockito.internal.util.reflection.ParameterizedConstructorInstantiatorTest:should_fail_if_an_argument_instance_type_do_not_match_wanted_type
+    java.lang.UnsupportedOperationException:
+org.mockito.internal.util.reflection.ParameterizedConstructorInstantiatorTest:should_instantiate_type_with_vararg_constructor
+    java.lang.UnsupportedOperationException:
+org.mockito.internal.util.reflection.ParameterizedConstructorInstantiatorTest:should_instantiate_type_if_resolver_provide_matching_types
+    java.lang.UnsupportedOperationException:
+org.mockitousage.basicapi.ResetTest:shouldRemoveAllStubbing
+    java.lang.UnsupportedOperationException:
+org.mockitousage.basicapi.UsingVarargsTest:shouldVerifyWithNullVarArgArray
+    java.lang.UnsupportedOperationException:
+org.mockitousage.basicapi.UsingVarargsTest:shouldVerifyWithAnyObject
+    java.lang.UnsupportedOperationException:
+org.mockitousage.basicapi.UsingVarargsTest:shouldStubBooleanVarargs
+    java.lang.UnsupportedOperationException:
+org.mockitousage.basicapi.UsingVarargsTest:shouldMatchEasilyEmptyVararg
+    java.lang.UnsupportedOperationException:
+org.mockitousage.basicapi.UsingVarargsTest:shouldVerifyBooleanVarargs
+    java.lang.UnsupportedOperationException:
+org.mockitousage.basicapi.UsingVarargsTest:shouldStubCorrectlyWhenMixedVarargsUsed
+    java.lang.UnsupportedOperationException:
+org.mockitousage.basicapi.UsingVarargsTest:shouldStubStringVarargs
+    java.lang.UnsupportedOperationException:
+org.mockitousage.basicapi.UsingVarargsTest:shouldStubCorrectlyWhenDoubleStringAndMixedVarargsUsed
+    java.lang.UnsupportedOperationException:
+org.mockitousage.basicapi.UsingVarargsTest:shouldVerifyStringVarargs
+    java.lang.UnsupportedOperationException:
+org.mockitousage.basicapi.UsingVarargsTest:shouldVerifyObjectVarargs
+    java.lang.UnsupportedOperationException:
+org.mockitousage.bugs.VarargsErrorWhenCallingRealMethodTest:shouldNotThrowAnyException
+    java.lang.UnsupportedOperationException:
+org.mockitousage.bugs.varargs.VarargsAndAnyObjectPicksUpExtraInvocationsTest:shouldVerifyCorrectlyWithAnyVarargs
+    java.lang.UnsupportedOperationException:
+org.mockitousage.bugs.varargs.VarargsAndAnyObjectPicksUpExtraInvocationsTest:shouldVerifyCorrectlyNumberOfInvocationsUsingAnyVarargAndEqualArgument
+    java.lang.UnsupportedOperationException:
+org.mockitousage.bugs.varargs.VarargsNotPlayingWithAnyObjectTest:shouldStubUsingAnyVarargs
+    java.lang.UnsupportedOperationException:
+org.mockitousage.matchers.VerificationAndStubbingUsingMatchersTest:shouldVerifyUsingMatchers
+    java.lang.UnsupportedOperationException:
+org.mockitousage.stubbing.BasicStubbingTest:test_stub_only_not_verifiable
+    java.lang.UnsupportedOperationException:
+org.mockitousage.stubbing.BasicStubbingTest:should_evaluate_latest_stubbing_first
+    java.lang.UnsupportedOperationException:
+org.mockitousage.stubbing.DeprecatedStubbingTest:shouldEvaluateLatestStubbingFirst
+    java.lang.UnsupportedOperationException:
+org.mockitousage.verification.VerificationInOrderMixedWithOrdiraryVerificationTest:shouldUseEqualsToVerifyMethodVarargs
+    java.lang.UnsupportedOperationException:
+```
+<br><br>
+
+### 4.2. 366th patch - T2F
+#### I. Fixed Result
+```java
+src/org/mockito/internal/invocation/InvocationMatcher.java: 123
+-   throw new UnsupportedOperationException();
++   if (indexOfVararg == - 1) {
++       return; 
++   }
+```
+
+#### II. Fixed chunks and locations - 1 chunk / 3 locations
+```java
+src/org/mockito/internal/invocation/InvocationMatcher.java: 123
+if (indexOfVararg == - 1) {
+    return; 
+}
+```
+
+### III. Decided Reason
+Its reason is the same as the reason in the 206 patch.
+<br><br>
