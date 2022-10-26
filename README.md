@@ -1,9 +1,9 @@
 # MCRepair
-* An Automated Program Repair (APR) that applied buggy block, patch optimization, and CodeBERT to target multi-chunk bugs.
+* An Automated Program Repair (APR) technique that applied a buggy block, patch optimization, and CodeBERT to target complex multi-chunk bugs.
 <br><br>
 
 ## 1. Location-level criterion
-* We did not consider null, blank, and comment locations that were not related to “FAULT_OF_OMISSION”
+* We did not consider null, blank, and comment locations that were not related to “FAULT_OF_OMISSION.”
     - “FAULT_OF_OMISSION” is a buggy location related to insertions.
     - A null location is a location that only includes “;” or does nothing. (e.g., “;” and “for (int i = 0; i < 10; i++);”)
     - A block’s end is not a null location because the block designates a flow range.
@@ -12,17 +12,17 @@
 <br><br>
 
 ## 2. Bug types
-The difficulties are in order of Type 3, Type 2, and Type 1. If an APR technique has Type 1, Type 2, and Type 3 in a module, we resulted the module in Type 3 based on the difficulties.
+The difficulties are in the order of Type 3, Type 2, and Type 1. If an APR technique has Type 1, Type 2, and Type 3 in a module, we resulted in Type 3 based on the difficulties.
 
-* Type 1: Single-chunk bugs that use single-location for fixing or fix single-location
-    - T1B: Type 1 bugs that use single-location for fixing
-    - T1F: Type 1 bugs that fix single-location
-* Type 2: Single-chunk bugs that use multi-location for fixing or fix multi-location
-    - T2B: Type 2 bugs that use multi-location for fixing
-    - T2F: Type 2 bugs that fix multi-location
-*  Type 3: Multi-chunk bugs that use multi-chunk for fixing or fix multi-chunk
-    - T3B: Type 3 bugs that use multi-chunk for fixing
-    - T3F: Type 3 bugs that fix multi-chunk
+* Type 1: A single-chunk bug that uses a location for fixing or fixes a location
+    - T1B: A Type 1 bug that uses a location for fixing
+    - T1F: A Type 1 bug that fixes a location
+* Type 2: A single-chunk bug that uses multiple locations for fixing or fixes multiple locations
+    - T2B: A Type 2 bug that use multiple locations for fixing
+    - T2F: A Type 2 bug that fixes multiple locations
+*  Type 3: A multi-chunk bug that uses multiple chunks for fixing or fixes multiple chunks
+    - T3B: A Type 3 bug that uses multiple chunks for fixing
+    - T3F: A Type 3 bug that fixes multiple chunks
 <br><br>
 
 ## 3. Statstics of bugs (66/75)
