@@ -58,7 +58,7 @@ The difficulties are in the order of Type 3, Type 2, and Type 1. If an APR techn
   |------ Mockito (4)  : [MC_1, 5, 22, 29]
   |------ Time (3)     : [T_4, 17, 19]
 ```
-<br><br>
+<br>
 
 ### 4.2. Statstics of correctly repaired bugs per bug type (66)
 ```powershell
@@ -85,9 +85,9 @@ The difficulties are in the order of Type 3, Type 2, and Type 1. If an APR techn
   |--------- Type 1 (2)    : [T_4, 19]
   |--------- Type 3 (1)    : [T_17]
 ```
-<br><br>
+<br>
 
-### 4.3. Statstics of correctly repaired bugs per chunk (66)
+### 4.3. Statstics of correctly repaired bugs per chunk range (66)
 ```powershell
   |--- Total (66)
   |------ 1 chunk (45)
@@ -108,9 +108,9 @@ The difficulties are in the order of Type 3, Type 2, and Type 1. If an APR techn
   |------ 4 chunks (1)
   |--------- Math (1)      : [M_18]
 ```
-<br><br>
+<br>
 
-### 4.4. Statstics of correctly repaired bugs per location (66)
+### 4.4. Statstics of correctly repaired bugs per location range (66)
 ```powershell
   |--- Total (66)
   |------ 1 location (38)
