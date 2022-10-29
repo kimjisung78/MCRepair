@@ -84,7 +84,7 @@ src/java/org/apache/commons/lang/enums/ValuedEnum.java: 183
 A location was inserted in front of Location 183.
 ```
 
-#### III. Decided Reason
+#### III. Explanation
 To fix the bug, the bug must check ```Object other``` argument. Also, ```super.compareTo(other)``` method (```compareTo(other)``` method of ```Enum``` abstract class) already checks the argument the same as its developer's patch as follows:
 ```java
 public int compareTo(Object other) {

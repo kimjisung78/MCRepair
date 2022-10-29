@@ -63,7 +63,7 @@ src/com/google/javascript/jscomp/CommandLineRunner.java: 861
 Location 861 was deleted.
 ```
 
-#### III. Decided Reason
+#### III. Explanation
 ```EmptyMessageBundle ``` class only includes empty and null values. Therefore, ```options.messageBundle = new EmptyMessageBundle();``` is optional. Also, the deletion does not occur warnings and errors.
 <br>
 
@@ -83,7 +83,7 @@ src/com/google/javascript/jscomp/CommandLineRunner.java: 861
 options.messageBundle = null;
 ```
 
-#### III. Decided Reason
+#### III. Explanation
 ```EmptyMessageBundle ``` class only includes empty and null values. Therefore, ```options.messageBundle = new EmptyMessageBundle();``` is optional. Also, the change does not occur warnings and errors.
 <br><br>
 
@@ -117,6 +117,6 @@ Location 861 was deleted.
 Location 862 was deleted.
 ```
 
-#### III. Decided Reason
+#### III. Explanation
 Its reason is the same as the reason in the 257th patch.
 <br><br>

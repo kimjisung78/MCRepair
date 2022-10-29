@@ -46,6 +46,6 @@ src/main/java/org/apache/commons/math3/genetics/ListPopulation.java: 209
 return chromosomes.stream().iterator();
 ```
 
-#### III. Decided Reason
+#### III. Explanation
 To fix the bug, the bug must be changed that it returns iterator of ```chromosomes``` field.
 <br><br>

@@ -91,6 +91,6 @@ src/main/java/org/apache/commons/math/util/MathUtils.java: 1626
 +   final double dp = p1[i] - p2[i];
 ```
 
-### III. Decided Reason
+### III. Explanation
 ```distance``` method just returns the distance between the two points for checking to overlap. Therefore, only changing Location 1626 can check to overlap.
 <br><br>

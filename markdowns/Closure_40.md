@@ -69,7 +69,7 @@ src/com/google/javascript/jscomp/NameAnalyzer.java: 639
 Location 639 was deleted.
 ```
 
-#### III. Decided Reason
+#### III. Explanation
 ```getName(ns.name, true)``` returns the name of ````ns.name`` after null-cheking.
 <br><br>
 
@@ -93,7 +93,7 @@ src/com/google/javascript/jscomp/NameAnalyzer.java: 635
 JsName name = getName(ns.name, true);
 ```
 
-#### III. Decided Reason
+#### III. Explanation
 Its reason is the same as the reason in the 37th patch.
 <br><br>
 

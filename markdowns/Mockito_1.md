@@ -59,7 +59,7 @@ src/org/mockito/internal/invocation/InvocationMatcher.java: 123
 A location was inserted in front of Location 123.
 ```
 
-### III. Decided Reason
+### III. Explanation
 Because the bug throws ```UnsupportedOperationException``` without checking ```indexOfVararg``` variable, the bug is occured. Therefore, to fix the bug, the bug must be changed that it checks the variable and throws the exception. Also, the patch removed all the failing testcases as follows.
 ```
 --- Failing Test ---
@@ -138,6 +138,6 @@ if (indexOfVararg == - 1) {
 }
 ```
 
-### III. Decided Reason
+### III. Explanation
 Its reason is the same as the reason in the 206 patch.
 <br><br>

@@ -51,7 +51,7 @@ src/com/google/javascript/jscomp/parsing/JsDocInfoParser.java: 1908
 return parseTypeExpression(token);
 ```
 
-#### III. Decided Reason
+#### III. Explanation
 ```parseTypeExpression(token)``` method already returns either ```newNode(Token.QMARK)``` of ```JsDocToken.QMARK``` or ```parseBasicTypeExpression(token)``.
 <br>
 
@@ -72,6 +72,6 @@ src/com/google/javascript/jscomp/parsing/JsDocInfoParser.java: 1908
 return this.parseTypeExpression(token);
 ```
 
-#### III. Decided Reason
+#### III. Explanation
 Its reason is the same as the reason in the 11st patch.
 <br><br>

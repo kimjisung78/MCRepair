@@ -45,6 +45,6 @@ src/main/java/org/apache/commons/math3/geometry/euclidean/twod/PolygonsSet.java:
 if (tree.getAttribute() instanceof Boolean) {
 ```
 
-#### III. Decided Reason
+#### III. Explanation
 To fix the bug, the bug must be changed that it checks that ```tree.getAttribute()``` can convert to ```Boolean``` class.
 <br><br>

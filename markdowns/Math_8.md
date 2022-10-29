@@ -76,7 +76,7 @@ src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java: 1
 final Object[] out = (Object[]) java.lang.reflect.Array.newInstance(singletons.get(sampleSize).getClass(), sampleSize);
 ```
 
-#### III. Decided Reason
+#### III. Explanation
 To fix the bug, the bug must be changed that it returns ```Object``` class value or its sub-class value.
 <br>
 
@@ -107,7 +107,7 @@ src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java: 1
 final Object[] out = (Object[]) java.lang.reflect.Array.newInstance(singletons.get(1).getClass(), sampleSize);
 ```
 
-#### III. Decided Reason
+#### III. Explanation
 Its reason is the same as the reason in the 130th patch. In addition, ```sampleSize``` argument is always more than 2 in ```DiscreteDistribution.java```.
 <br>
 
@@ -126,6 +126,6 @@ src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java: 1
 Location 190 was deleted.
 ```
 
-#### III. Decided Reason
+#### III. Explanation
 Because ```out``` variable is called in Location 190 after converting with Generic, the bug is occured. To fix the bug, Location 190 must be deleted.
 <br><br>

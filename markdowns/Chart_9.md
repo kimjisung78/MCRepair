@@ -46,7 +46,7 @@ source/org/jfree/data/time/TimeSeries.java: 944
 if (endIndex - startIndex < 0) {
 ```
 
-#### III. Decided Reason
+#### III. Explanation
 To fix the bug, location 944 should be changed that ```endIndex``` is less than ```startIndex```. Therefore, ```if (endIndex - startIndex < 0) {``` is equivalent to ```if (endIndex < startIndex) {```.
 <br><br>
 
@@ -66,7 +66,7 @@ source/org/jfree/data/time/TimeSeries.java: 944
 if (endIndex < startIndex) {
 ```
 
-#### III. Decided Reason
+#### III. Explanation
 Its reason is the same as the reason in the 36th patch.
 <br><br>
 

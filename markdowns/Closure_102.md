@@ -112,6 +112,6 @@ src/com/google/javascript/jscomp/Normalize.java: 97
 A location was inserted in front of Location 97.
 ```
 
-#### III. Decided Reason
+#### III. Explanation
 A ```void``` method is equivalent to a method that performs ```return;```.
 <br><br>

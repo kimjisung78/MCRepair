@@ -76,7 +76,7 @@ src/java/org/apache/commons/lang/BooleanUtils.java: 682
 A location was inserted in front of Location 682.
 ```
 
-#### Decided Reason
+#### Explanation
 To fix the bug, the bug must changed so that it prevents the fall through problem of ```case 3```.
 <br><br>
 
@@ -100,7 +100,7 @@ src/java/org/apache/commons/lang/BooleanUtils.java: 681
 }
 ```
 
-#### Decided Reason
+#### Explanation
 To fix the bug, the bug must changed that it prevents the fall through problem of ```case 3```. Also, ```if (ch == 'Y')``` statement occurs the problem. Therefore, the statement must added else statement that prevents the problem.
 <br><br>
 
@@ -124,6 +124,6 @@ src/java/org/apache/commons/lang/BooleanUtils.java: 681
 }
 ```
 
-#### Decided Reason
+#### Explanation
 Its reason is the same as the reason in the 98th patch.
 <br><br>

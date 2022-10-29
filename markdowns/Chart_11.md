@@ -64,7 +64,7 @@ source/org/jfree/chart/util/ShapeUtilities.java: 274
 PathIterator iterator1 = p2.getPathIterator(null);
 ```
 
-#### III. Decided Reason
+#### III. Explanation
 To fix the bug, the bug should be changed that it compares ```p1``` and ```p2``` iterators. 
 <br><br>
 

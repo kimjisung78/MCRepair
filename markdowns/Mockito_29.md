@@ -44,7 +44,7 @@ src/org/mockito/internal/matchers/Same.java: 29
 description.appendText(String.valueOf(wanted));
 ```
 
-#### III. Decided Reason
+#### III. Explanation
 ```String.valueOf(wanted)``` is equivalent to ```wanted == null ? "null" : wanted.toString()``` as follows.
 ```java
 System.out.println(String.valueOf(null)); // "null"

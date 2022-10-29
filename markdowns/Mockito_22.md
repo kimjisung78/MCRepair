@@ -65,6 +65,6 @@ src/org/mockito/internal/matchers/Equality.java: 13
 if (o1 == null) {
 ```
 
-#### III. Decided Reason
+#### III. Explanation
 If ```o1``` argument is null, ```o1.equals(o2)``` statement occurs RuntimeException due to null comparison problem. Therefore, the bug must be changed that it fisrt checks null about the argument. After the change, the bug does not occur any exceptions. Hence, the try-catch statement of the patch is dead and is not working. Also, the statement was not counted about the number of chunks and locations.
 <br><br>

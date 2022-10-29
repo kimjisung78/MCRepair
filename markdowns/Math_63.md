@@ -47,7 +47,7 @@ src/main/java/org/apache/commons/math/util/MathUtils.java: 121
 return x==y;
 ```
 
-#### III. Decided Reason 
+#### III. Explanation 
 The result of a floating-point comparison, as determined by the specification of the IEEE 754 standard, is:
 Floating-point equality testing is performed in accordance with the rules of the IEEE 754 standard:
 * If either operand is NaN, then the result of == is false but the result of != is true. Indeed, the test x!=x is true if and only if the value of x is NaN. The methods Float.isNaN and Double.isNaN may also be used to test whether a value is NaN.
@@ -89,6 +89,6 @@ if (x == y) {
 }
 ```
 
-#### III. Decided Reason 
+#### III. Explanation 
 Its reason is the same as the reason in the 332nd patch.
 <br><br>

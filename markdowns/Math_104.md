@@ -61,6 +61,6 @@ src/java/org/apache/commons/math/special/Gamma.java: 37
 private static final double DEFAULT_EPSILON = 10e-18;
 ```
 
-#### III. Decided Reason
+#### III. Explanation
 To fix the bug, ```DEFAULT_EPSILON``` field is greater than ```10e-9```.
 <br><br>

@@ -68,7 +68,7 @@ src/java/org/apache/commons/math/linear/RealMatrixImpl.java: 779
 final double[] out = new double[this.data.length];
 ```
 
-### III. Decided Reason
+### III. Explanation
 Because ```data``` field is a 2D array, the length of the field is equivalent to the number of rows.
 <br>
 
@@ -99,6 +99,6 @@ src/java/org/apache/commons/math/linear/RealMatrixImpl.java: 779
 final double[] out = new double[getRowDimension()];
 ```
 
-### III. Decided Reason
+### III. Explanation
 Its reason is the same as the reason in the 5,055th patch.
 <br><br>

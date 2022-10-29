@@ -67,7 +67,7 @@ src/com/google/javascript/jscomp/NodeUtil.java: 2465
 return false == true;
 ```
 
-#### III. Decided Reason
+#### III. Explanation
 ```false == true``` is false.
 <br><br>
 

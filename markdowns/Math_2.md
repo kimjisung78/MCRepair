@@ -48,7 +48,7 @@ src/main/java/org/apache/commons/math3/distribution/HypergeometricDistribution.j
 return (double) sampleSize * getNumberOfSuccesses() / (double) getPopulationSize();
 ```
 
-#### III. Decided Reason
+#### III. Explanation
 To fix bug, the bugs must be change that it converts ```getSampleSize()``` to double.
 <br><br>
 
@@ -68,7 +68,7 @@ src/main/java/org/apache/commons/math3/distribution/HypergeometricDistribution.j
 return (double) sampleSize * getNumberOfSuccesses() / getPopulationSize();
 ```
 
-#### III. Decided Reason
+#### III. Explanation
 Its reason is the same as the reason in the 138th patch.
 <br><br>
 
@@ -88,6 +88,6 @@ src/main/java/org/apache/commons/math3/distribution/HypergeometricDistribution.j
 return (double) getSampleSize() * getNumberOfSuccesses() / (double) getPopulationSize()
 ```
 
-#### III. Decided Reason
+#### III. Explanation
 Its reason is the same as the reason in the 138th patch.
 <br><br>

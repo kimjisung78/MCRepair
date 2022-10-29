@@ -54,7 +54,7 @@ src/com/google/javascript/jscomp/TypeCheck.java: 1574
 Three locations were inserted in front of location 1574.
 ```
 
-#### III. Decided Reason
+#### III. Explanation
 To fix the bug, it must check or handle null about ```implicitProto```. The patch checked the null. 
 <br>
 
@@ -93,7 +93,7 @@ src/com/google/javascript/jscomp/TypeCheck.java: 1591
 +   }
 ```
 
-#### III. Decided Reason
+#### III. Explanation
 To fix the bug, it must check or handle null about ```implicitProto```. The patch handled the null.
 <br><br>
 
@@ -128,7 +128,7 @@ src/com/google/javascript/jscomp/TypeCheck.java: 1592
 A location was inserted in front of location 1592.
 ```
 
-#### III. Decided Reason
+#### III. Explanation
 To fix the bug, it must check or handle null about ```implicitProto```. The patch checked the null and avoided it. 
 <br><br>
 

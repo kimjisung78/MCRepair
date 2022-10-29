@@ -47,7 +47,7 @@ src/com/google/javascript/jscomp/CodeConsumer.java: 245
 if (x <= 0 && prev == '-') {
 ```
 
-#### III. Decided Reason
+#### III. Explanation
 ```negativeZero``` indicates ```-0```. In Java, ```-0 == 0``` is true.
 <br><br>
 
@@ -67,6 +67,6 @@ src/com/google/javascript/jscomp/CodeConsumer.java: 245
 if (x < 1 && prev == '-') {
 ```
 
-#### III. Decided Reason
+#### III. Explanation
 Its reason is the same as the reason in the 8th patch.
 <br><br>

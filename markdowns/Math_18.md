@@ -103,6 +103,6 @@ src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java: 
 res[i] = diff * x[i];
 ```
 
-#### III. Decided Reason
+#### III. Explanation
 To change locations 992 and 995 is optional because ```CMAESOptimizer.java``` specifies ```Normalizes fitness values to the range [0,1].``` comment. Therefore, to fix the bug, the bug should change locations 932 and 958 as the same as its developer's patch.
 <br><br>

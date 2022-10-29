@@ -64,7 +64,7 @@ src/com/google/javascript/jscomp/TypeCheck.java: 614
 A location was inserted in front of location 614.
 ```
 
-#### III. Decided Reason
+#### III. Explanation
 To fix the bug, ```public JSType caseObjectType(ObjectType type)``` must be changed that it returns ```ctorType```, ```type```, or ```null```. The patch returns ```ctorType```, ```type```, or ```null```.
 <br><br>
 
@@ -86,6 +86,6 @@ if (resultEqualsValue && ctorType.isSubtype(type))
     return resultEqualsValue ? ctorType : null;
 ```
 
-#### III. Decided Reason
+#### III. Explanation
 Its reason is the same as the reason in the 2nd patch.
 <br>

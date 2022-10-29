@@ -96,7 +96,7 @@ Location 153 was deleted.
 Location 154 was deleted.
 ```
 
-#### III. Decided Reason
+#### III. Explanation
 To only return ```super.getLeastSupertype(that)``` in ```public JSType getLeastSupertype(JSType that)``` is equivalent to the deletion of the method.
 <br><br>
 
@@ -142,7 +142,7 @@ Location 153 was deleted.
 Location 154 was deleted.
 ```
 
-#### III. Decided Reason
+#### III. Explanation
 Its reason is the same as the reason in the 402nd patch.
 <br><br>
 

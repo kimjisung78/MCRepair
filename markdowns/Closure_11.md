@@ -61,7 +61,7 @@ src/com/google/javascript/jscomp/TypeCheck.java: 1321
 A location was inserted in front of location 1321.
 ```
 
-#### III. Decided Reason
+#### III. Explanation
 A ```void``` method is equivalent to a method that performs ```return;```.
 <br><br>
 

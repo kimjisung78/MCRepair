@@ -65,6 +65,6 @@ src/main/java/org/apache/commons/math3/complex/Complex.java: 305
 return INF;
 ```
 
-#### III. Decided Reason
+#### III. Explanation
 ```null != null``` is false.
 <br><br>

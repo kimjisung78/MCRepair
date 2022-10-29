@@ -52,7 +52,7 @@ src/com/google/javascript/jscomp/PeepholeOptimizationsPass.java: 176-177 (Divide
 break;
 ```
 
-#### III. Decided Reason
+#### III. Explanation
 ```IllegalArgumentException``` indicates that a method has been passed an illegal or inappropriate argument. Therefore, to throw the exception is optional. In addition, the situation that the exception does not occur, does not affect the source code.
 <br><br>
 
@@ -73,6 +73,6 @@ Location 175 was deleted.
 Divided Locations 176 and 177 were deleted.
 ```
 
-#### III. Decided Reason
+#### III. Explanation
 Its reason is the same as the reason in the 411st patch.
 <br><br>

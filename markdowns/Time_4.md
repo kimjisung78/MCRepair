@@ -45,6 +45,6 @@ src/main/java/org/joda/time/Partial.java: 464
 Partial newPartial = new Partial(newTypes, newValues);
 ```
 
-#### III. Decided Reason
+#### III. Explanation
 The validation result of ```Partial newPartial = new Partial(newTypes, newValues);``` is equivalent to the validation result of ```Partial newPartial = new Partial(newTypes, newValues, iChronology);```.
 <br><br>

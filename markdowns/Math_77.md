@@ -81,7 +81,7 @@ src/main/java/org/apache/commons/math/linear/ArrayRealVector.java: 498
 public double getLInfNormal() {
 ```
 
-### III. Decided Reason
+### III. Explanation
 Because ```getLInfNorm``` method is not called in ```ArrayRealVector.java```, the method is equivalent to the deletion.
 <br>
 
@@ -112,6 +112,6 @@ src/main/java/org/apache/commons/math/linear/ArrayRealVector.java: 498
 public double getLinfNorm() {
 ```
 
-### III. Decided Reason
+### III. Explanation
 Its reason is the same as the reason in the 2,903rd patch.
 <br><br>

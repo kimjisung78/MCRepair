@@ -92,7 +92,7 @@ Location 731 was deleted.
 Location 732 was deleted.
 ```
 
-#### III. Decided Reason
+#### III. Explanation
 Because ```boolean hasSideEffects``` variable is not called in its method, the varible is equivalent to the deletion.
 <br><br>
 
@@ -133,7 +133,7 @@ Location 731 was deleted.
 Location 732 was deleted.
 ```
 
-#### III. Decided Reason
+#### III. Explanation
 Its reason is the same as the reason in the 1st patch.
 <br><br>
 
@@ -223,6 +223,6 @@ Location 731 was deleted.
 Location 732 was deleted.
 ```
 
-#### III. Decided Reason
+#### III. Explanation
 Its reason is the same as the reason in the 1st patch.
 <br><br>

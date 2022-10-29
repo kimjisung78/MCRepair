@@ -76,7 +76,7 @@ src/com/google/javascript/jscomp/PeepholeOptimizationsPass.java: 138
 A location was inserted in front of location 138.
 ```
 
-#### III. Decided Reason
+#### III. Explanation
 A ```void``` method is equivalent to a method that performs ```return;```.
 <br><br>
 
@@ -106,6 +106,6 @@ src/com/google/javascript/jscomp/PeepholeOptimizationsPass.java: 128
 A location was inserted in front of location 128.
 ```
 
-#### III. Decided Reason
+#### III. Explanation
 A ```void``` method is equivalent to a method that performs ```return;```.
 <br><br>

@@ -48,6 +48,6 @@ src/com/google/javascript/jscomp/parsing/IRFactory.java: 252
 if (comment.getValue().indexOf("/* @") != -1 || comment.getValue().indexOf("@") != -1) {
 ```
 
-#### III. Decided Reason
+#### III. Explanation
 To fix the bug, ```if (comment.getValue().indexOf("/* @") != -1 || comment.getValue().indexOf("\n * @") != -1) {``` must changed that it must find comments that include ```@```, a character of comment.
 <br><br>
