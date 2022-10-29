@@ -14,7 +14,9 @@ src/main/java/org/joda/time/DateTimeZone.java: 900
 ```
 <br>
 
-## 2. Used chunks and locations - 1 chunk / 1 location
+## 2. Used chunks and locations - T1B
+* The number of used chunks: 1 chunk
+* The number of used locations: 1 location
 ```java
 src/main/java/org/joda/time/DateTimeZone.java: 900
 } else if (offsetLocal > 0) {
@@ -34,9 +36,9 @@ src/main/java/org/joda/time/DateTimeZone.java: 900
 +   } else if (offsetLocal > 0 - 1) {
 ```
 
-#### II. Fixed chunks and locations - T1B
-* The number of used chunks: 1 chunk
-* The number of used locations: 1 location
+#### II. Fixed chunks and locations 
+* The number of fixed chunks: 1 chunk
+* The number of fixed locations: 1 location
 ```java
 src/main/java/org/joda/time/DateTimeZone.java: 900
 } else if (offsetLocal > 0 - 1) {
