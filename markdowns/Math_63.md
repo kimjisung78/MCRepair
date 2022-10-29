@@ -62,7 +62,7 @@ Double.NEGATIVE_INFINITY == Double.NEGATIVE_INFINITY // true
 Float.NaN == Float.NaN // false
 Double.NaN == Double.NaN // false
 ```
-Since ```==``` operator provides mathematical comparisons, it returns false for ```NaN == NaN``` and true for ```-0.0 == 0.0```. Therefore, using ```==``` operator except for ```NaN``` can fix the bug.
+Because ```==``` operator provides mathematical comparisons, it returns false for ```NaN == NaN``` and true for ```-0.0 == 0.0```. Therefore, using ```==``` operator except for ```NaN``` can fix the bug.
 <br>
 
 ### 4.2. 442nd patch - T2F

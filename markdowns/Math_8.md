@@ -108,7 +108,7 @@ final Object[] out = (Object[]) java.lang.reflect.Array.newInstance(singletons.g
 ```
 
 #### III. Decided Reason
-Its reason is the same as the reason in the 130th patch. In addition, ```sampleSize``` argument is always more than 1 in ```DiscreteDistribution.java```.
+Its reason is the same as the reason in the 130th patch. In addition, ```sampleSize``` argument is always more than 2 in ```DiscreteDistribution.java```.
 <br>
 
 ### 4.3. 328th patch - T1F
@@ -127,5 +127,5 @@ Location 190 was deleted.
 ```
 
 #### III. Decided Reason
-Since ```out``` variable is called in Location 190 after converting with Generic, the bug is occured. To fix the bug, Location 190 must be deleted.
+Because ```out``` variable is called in Location 190 after converting with Generic, the bug is occured. To fix the bug, Location 190 must be deleted.
 <br><br>

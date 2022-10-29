@@ -53,7 +53,7 @@ break;
 ```
 
 #### III. Decided Reason
-```IllegalArgumentException``` indicates that a method has been passed an illegal or inappropriate argument. Therefore, to throw the exception is optional. In addition, the situation that the exception does not occur does not affect source code.
+```IllegalArgumentException``` indicates that a method has been passed an illegal or inappropriate argument. Therefore, to throw the exception is optional. In addition, the situation that the exception does not occur, does not affect the source code.
 <br><br>
 
 ### 4.2. 412nd patch - T2F

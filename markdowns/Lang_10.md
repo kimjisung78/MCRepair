@@ -89,7 +89,7 @@ Location 314 was deleted.
 ```
 
 #### III. Decided Reason
-Since ```boolean wasWhite``` variable is not called in its method, the varible is equivalent to the deletion.
+Because ```boolean wasWhite``` variable is not called in its method, the varible is equivalent to the deletion.
 <br><br>
 
 ### 4.2. 3rd patch - T3F
@@ -167,7 +167,7 @@ Location 314 was deleted.
 ```
 
 #### III. Decided Reason
-Since ```boolean wasWhite``` variable is not in its method, the varible is equivalent to the deletion.
+Because ```boolean wasWhite``` variable is not in its method, the varible is equivalent to the deletion.
 <br><br>
 
 ### 4.4. 252th patch - T3F

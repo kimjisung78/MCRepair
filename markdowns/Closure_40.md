@@ -70,7 +70,7 @@ Location 639 was deleted.
 ```
 
 #### III. Decided Reason
-```getName(ns.name, true)``` returns a name of ````ns.name`` after null-cheking.
+```getName(ns.name, true)``` returns the name of ````ns.name`` after null-cheking.
 <br><br>
 
 ### 4.2. 80th patch - T1F

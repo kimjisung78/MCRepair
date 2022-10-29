@@ -69,7 +69,7 @@ final double[] out = new double[this.data.length];
 ```
 
 ### III. Decided Reason
-Since ```data``` field is a 2D array, the length of the field is equivalent to the number of rows.
+Because ```data``` field is a 2D array, the length of the field is equivalent to the number of rows.
 <br>
 
 ### 4.2. 5,096th patch - T3F

@@ -97,7 +97,7 @@ Location 154 was deleted.
 ```
 
 #### III. Decided Reason
-To only return ```super.getLeastSupertype(that)``` in ```public JSType getLeastSupertype(JSType that)``` is equivalent to deleting the method.
+To only return ```super.getLeastSupertype(that)``` in ```public JSType getLeastSupertype(JSType that)``` is equivalent to the deletion of the method.
 <br><br>
 
 ### 4.2. 403rd patch - T3F

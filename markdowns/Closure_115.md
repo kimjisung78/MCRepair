@@ -93,7 +93,7 @@ Location 732 was deleted.
 ```
 
 #### III. Decided Reason
-Since ```boolean hasSideEffects``` variable is not called in its method, the varible is equivalent to the deletion.
+Because ```boolean hasSideEffects``` variable is not called in its method, the varible is equivalent to the deletion.
 <br><br>
 
 ### 4.2. 2nd patch - T3F

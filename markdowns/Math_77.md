@@ -82,7 +82,7 @@ public double getLInfNormal() {
 ```
 
 ### III. Decided Reason
-Since ```getLInfNorm``` method is not called in ```ArrayRealVector.java```, the method is equivalent to the deletion.
+Because ```getLInfNorm``` method is not called in ```ArrayRealVector.java```, the method is equivalent to the deletion.
 <br>
 
 ### 4.2. 2,912nd patch - T3F
