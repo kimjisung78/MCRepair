@@ -104,5 +104,5 @@ res[i] = diff * x[i];
 ```
 
 #### III. Decided Reason
-To change locations 992 and 995 is optional because ```CMAESOptimizer.java``` specifies ```Normalizes fitness values to the range [0,1].``` comment. Therefore, to fix the bug, the bug should change Location 932 and 958 as the same as its developer's patch.
+To change locations 992 and 995 is optional because ```CMAESOptimizer.java``` specifies ```Normalizes fitness values to the range [0,1].``` comment. Therefore, to fix the bug, the bug should change Locations 932 and 958 as the same as its developer's patch.
 <br><br>
