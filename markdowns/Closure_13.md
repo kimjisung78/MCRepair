@@ -1,4 +1,8 @@
-# Closure 13 - Type 3 (T3B / T3F)
+# Closure 13
+* <h4>Bug type: Type 3 (T3B / T3F)</h4>
+* <h4>The number of chunks: 3 chunks (2 used chunks / 2, 3 fixed chunks)</h4>
+* <h4>The number of locations: 3 locations (2 used locations / 2, 3 fixed locations)</h4>
+<br>
 
 ## 1. Developer's patch
 * `-`: A fixed and deleted location
@@ -15,7 +19,9 @@ src/com/google/javascript/jscomp/PeepholeOptimizationsPass.java: 124-129
 ```
 <br>
 
-## 2. Used chunks and locations - 2 chunks / 2 locations
+## 2. Used chunks and locations - T3B
+* The number of used chunks: 2 chunks
+* The number of used locations: 2 locations
 ```java
 src/com/google/javascript/jscomp/PeepholeOptimizationsPass.java: 126
 traverse(c);
@@ -52,7 +58,9 @@ src/com/google/javascript/jscomp/PeepholeOptimizationsPass.java: 137-138
     }
 ```
 
-#### II. Fixed chunks and locations - 3 chunks / 3 locations
+#### II. Fixed chunks and locations
+* The number of fixed chunks: 3 chunks
+* The number of fixed locations: 3 locations
 ```java
 src/com/google/javascript/jscomp/PeepholeOptimizationsPass.java: 126
 Location 126 was deleted.
@@ -85,7 +93,9 @@ src/com/google/javascript/jscomp/PeepholeOptimizationsPass.java: 124-129
     }
 ```
 
-#### II. Fixed chunks and locations - 2 chunks / 2 locations
+#### II. Fixed chunks and locations
+* The number of fixed chunks: 2 chunks
+* The number of fixed locations: 2 locations
 ```java
 src/com/google/javascript/jscomp/PeepholeOptimizationsPass.java: 126
 Location 126 was deleted.

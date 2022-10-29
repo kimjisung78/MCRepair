@@ -1,4 +1,8 @@
-# Chart 1 - Type 3 (T1B / T1F, T2F, T3F)
+# Chart 1
+* <h4>Bug type: Type 3 (T1B / T1F, T2F, T3F)</h4>
+* <h4>The number of chunks: 2 chunks (1 used chunk / 1, 2 fixed chunks)</h4>
+* <h4>The number of locations: 2 locations (1 used location / 1, 2 fixed locations)</h4>
+<br>
 
 ## 1. Developer's patch
 * `-`: A fixed and deleted location
@@ -13,14 +17,16 @@ source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java: 1796
 ```
 <br>
 
-## 2. Used chunks and locations - 1 chunk / 1 location
+## 2. Used chunks and locations - T1B
+* The number of used chunks: 1 chunk
+* The number of used locations: 1 location
 ```java
 source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java: 1797
 if (dataset != null) {
 ```
 <br>
 
-## 3. Correct combined patches per bug type
+## 3. Correct combined patches per fixed bug type
 * T1F: 14, 95, 105, 117, 119, 163, 175, 301, 327, 354
 * T2F: 355
 * T3F: 223
@@ -35,7 +41,9 @@ source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java: 1797
 +   if (dataset == null) {
 ```
 
-#### II. Fixed chunks and locations - 1 chunk / 1 location
+#### II. Fixed chunks and locations
+* The number of fixed chunks: 1 chunk
+* The number of fixed locations: 1 location
 ```java
 source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java: 1797
 if (dataset == null) {
@@ -52,7 +60,9 @@ source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java: 1797
 -   }
 ```
 
-#### II. Fixed chunks and locations - 2 chunks / 2 locations
+#### II. Fixed chunks and locations
+* The number of fixed chunks: 2 chunks
+* The number of fixed locations: 2 locations
 ```java
 source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java: 1797
 if (dataset == null)
@@ -75,7 +85,9 @@ source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java: 1797
     }
 ```
 
-#### II. Fixed chunks and locations - 1 chunk / 2 locations
+#### II. Fixed chunks and locations
+* The number of fixed chunks: 1 chunk
+* The number of fixed locations: 2 locations
 ```java
 source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java: 1797-1798
 if (dataset == null) {

@@ -1,4 +1,8 @@
-# Closure 101 - Type 2 (T1B / T2F)
+# Closure 101
+* <h4>Bug type: Type 2 (T2B / T2F)</h4>
+* <h4>The number of chunks: 1 chunks (1 used chunks / 1 fixed chunk)</h4>
+* <h4>The number of locations: 4 locations (4 used locations / 4 fixed locations)</h4>
+<br>
 
 ## 1. Developer's patch
 * `-`: A fixed and deleted location
@@ -18,7 +22,9 @@ src/com/google/javascript/jscomp/CommandLineRunner.java: 430-438
 ```
 <br>
 
-## 2. Used chunks and locations - 1 chunk / 4 location
+## 2. Used chunks and locations - T2B
+* The number of used chunks: 1 chunk
+* The number of used locations: 4 locations
 ```java
 src/com/google/javascript/jscomp/CommandLineRunner.java: 433-435
 if (flags.process_closure_primitives) {
@@ -50,7 +56,9 @@ src/com/google/javascript/jscomp/CommandLineRunner.java: 433-438
 ```
 <br>
 
-#### II. Fixed chunks and locations - 1 chunk / 4 locations
+#### II. Fixed chunks and locations
+* The number of fixed chunks: 1 chunk
+* The number of fixed locations: 4 locations
 ```java
 src/com/google/javascript/jscomp/CommandLineRunner.java: 433-435
 Location 433 was deleted.
@@ -75,7 +83,9 @@ src/com/google/javascript/jscomp/CommandLineRunner.java: 433-438
     return options;
 ```
 
-#### II. Fixed chunks and locations - 1 chunk / 4 locations
+#### II. Fixed chunks and locations
+* The number of fixed chunks: 1 chunk
+* The number of fixed locations: 4 locations
 ```java
 src/com/google/javascript/jscomp/CommandLineRunner.java: 433-435
 Location 433 was deleted.

@@ -1,4 +1,8 @@
-# Lang 51 - Type 2 (T1B / T1F, T2F)
+# Lang 51
+* <h4>Bug type: Type 2 (T1B / T1F, T2F)</h4>
+* <h4>The number of chunks: 1 chunks (1 used chunk / 1 fixed chunks)</h4>
+* <h4>The number of locations: 3 locations (1 used location / 1, 3 fixed locations)</h4>
+<br>
 
 ## 1. Developer's patch
 * `-`: A fixed and deleted location
@@ -24,7 +28,9 @@ src/java/org/apache/commons/lang/BooleanUtils.java: 670-684
 ```
 <br>
 
-## 2. Used chunks and locations - 1 chunk / 1 location
+## 2. Used chunks and locations - T1B
+* The number of used chunks: 1 chunk
+* The number of used locations: 1 location
 ```java
 src/java/org/apache/commons/lang/BooleanUtils.java: 682
 FAULT_OF_OMISSION
@@ -45,7 +51,9 @@ src/java/org/apache/commons/lang/BooleanUtils.java: 682
     }
 ```
 
-#### II. Fixed chunks and locations - 1 chunk / 1 location
+#### II. Fixed chunks and locations 
+* The number of fixed chunks: 1 chunk
+* The number of fixed locations: 1 location
 ```java
 src/java/org/apache/commons/lang/BooleanUtils.java: 682
 A location was inserted in front of Location 682.
@@ -60,7 +68,9 @@ src/java/org/apache/commons/lang/BooleanUtils.java: 682
     }
 ```
 
-#### II. Fixed chunks and locations - 1 chunk / 1 location
+#### II. Fixed chunks and locations
+* The number of fixed chunks: 1 chunk
+* The number of fixed locations: 1 location
 ```java
 src/java/org/apache/commons/lang/BooleanUtils.java: 682
 A location was inserted in front of Location 682.
@@ -80,7 +90,9 @@ src/java/org/apache/commons/lang/BooleanUtils.java: 681
 +   }
 ```
 
-#### II. Fixed chunks and locations - 1 chunk / 3 locations
+#### II. Fixed chunks and locations
+* The number of fixed chunks: 1 chunk
+* The number of fixed locations: 3 locations
 ```java
 src/java/org/apache/commons/lang/BooleanUtils.java: 681
 } else {
@@ -102,7 +114,9 @@ src/java/org/apache/commons/lang/BooleanUtils.java: 681
 +   }
 ```
 
-#### II. Fixed chunks and locations - 1 chunk / 3 locations
+#### II. Fixed chunks and locations
+* The number of fixed chunks: 1 chunk
+* The number of fixed locations: 3 locations
 ```java
 src/java/org/apache/commons/lang/BooleanUtils.java: 681
 } else {

@@ -1,4 +1,8 @@
-# Math 79 - Type 3 (T3B / T3F)
+# Math 79
+* <h4>Bug type: Type 3 (T3B / T1F, T3F)</h4>
+* <h4>The number of chunks: 2 chunks (2 used chunks / 1, 2 fixed chunks)</h4>
+* <h4>The number of locations: 2 locations (2 used locations / 1, 2 fixed locations)</h4>
+<br>
 
 ## 1. Developer's patch
 * `-`: A fixed and deleted location
@@ -17,7 +21,9 @@ src/main/java/org/apache/commons/math/util/MathUtils.java: 1623-1629
 ```
 <br>
 
-## 2. Used chunks and locations - 2 chunks / 2 locations
+## 2. Used chunks and locations - T3B
+* The number of used chunks: 2 chunks
+* The number of used locations: 2 locations
 ```java
 src/main/java/org/apache/commons/math/util/MathUtils.java: 1624
 int sum = 0;
@@ -48,7 +54,9 @@ src/main/java/org/apache/commons/math/util/MathUtils.java: 1624-1628
     }
 ```
 
-#### II. Fixed chunks and locations - 2 chunks / 2 locations
+#### II. Fixed chunks and locations
+* The number of fixed chunks: 2 chunks
+* The number of fixed locations: 2 locations
 ```java
 src/main/java/org/apache/commons/math/util/MathUtils.java: 1624
 -   int sum = 0;
@@ -62,7 +70,7 @@ src/main/java/org/apache/commons/math/util/MathUtils.java: 1626
 ```
 <br>
 
-### 4.2. 153rd patch - T3F
+### 4.2. 153rd patch - T1F
 #### I. Fixed Result
 ```java
 src/main/java/org/apache/commons/math/util/MathUtils.java: 1624-1628
@@ -74,7 +82,9 @@ src/main/java/org/apache/commons/math/util/MathUtils.java: 1624-1628
     }
 ```
 
-#### II. Fixed chunks and locations - 1 chunk / 1 location
+#### II. Fixed chunks and locations
+* The number of fixed chunks: 1 chunk
+* The number of fixed locations: 1 location
 ```java
 src/main/java/org/apache/commons/math/util/MathUtils.java: 1626
 -   final int dp = p1[i] - p2[i];

@@ -1,4 +1,8 @@
-# Closure 86 - Type 1 (T1B / T1F, T2F)
+# Closure 86
+* <h4>Bug type: Type 2 (T1B / T1F, T2F)</h4>
+* <h4>The number of chunks: 1 chunk (1 used chunk / 1 fixed chunk)</h4>
+* <h4>The number of locations: 3 locations (1 used location / 1, 3 fixed locations)</h4>
+<br>
 
 ## 1. Developer's patch
 * `-`: A fixed and deleted location
@@ -15,7 +19,9 @@ src/com/google/javascript/jscomp/NodeUtil.java: 2461-2466
 ```
 <br>
 
-## 2. Used chunks and locations - 1 chunk / 1 location
+## 2. Used chunks and locations - T1B
+* The number of used chunks: 1 chunk
+* The number of used locations: 1 location
 ```java
 src/com/google/javascript/jscomp/NodeUtil.java: 2465
 return true;
@@ -36,7 +42,9 @@ src/com/google/javascript/jscomp/NodeUtil.java: 2465
 +   return false;
 ```
 
-#### II. Fixed chunks and locations - 1 chunk / 1 location
+#### II. Fixed chunks and locations
+* The number of fixed chunks: 1 chunk
+* The number of fixed locations: 1 location
 ```java
 src/com/google/javascript/jscomp/NodeUtil.java: 2465
 return false;
@@ -51,7 +59,9 @@ src/com/google/javascript/jscomp/NodeUtil.java: 2465
 +   return false == true;
 ```
 
-#### II. Fixed chunks and locations - 1 chunk / 1 location
+#### II. Fixed chunks and locations
+* The number of fixed chunks: 1 chunk
+* The number of fixed locations: 1 location
 ```java
 src/com/google/javascript/jscomp/NodeUtil.java: 2465
 return false == true;
@@ -72,7 +82,9 @@ src/com/google/javascript/jscomp/NodeUtil.java: 2464-2465
 +   }
 ```
 
-#### II. Fixed chunks and locations - 1 chunk / 3 locations
+#### II. Fixed chunks and locations
+* The number of fixed chunks: 1 chunk
+* The number of fixed locations: 3 locations
 ```java
 src/com/google/javascript/jscomp/NodeUtil.java: 2464-2465
 case Token.NEW:{

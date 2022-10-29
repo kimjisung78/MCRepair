@@ -1,4 +1,8 @@
-# Math 2 - Type 1 (T1B / T1F)
+# Math 2
+* <h4>Bug type: Type 1 (T1B / T1F)</h4>
+* <h4>The number of chunks: 1 chunk (1 used chunk / 1 fixed chunk)</h4>
+* <h4>The number of locations: 1 location (1 used location / 1 fixed location)</h4>
+<br>
 
 ## 1. Developer's patch
 * `-`: A fixed and deleted location
@@ -14,7 +18,9 @@ src/main/java/org/apache/commons/math3/distribution/HypergeometricDistribution.j
 ```
 <br>
 
-## 2. Used chunks and locations - 1 chunk / 1 location
+## 2. Used chunks and locations - T1B
+* The number of used chunks: 1 chunk
+* The number of used locations: 1 location
 ```java
 src/main/java/org/apache/commons/math3/distribution/HypergeometricDistribution.java: 268
 return (double) (getSampleSize() * getNumberOfSuccesses()) / (double) getPopulationSize();
@@ -34,7 +40,9 @@ src/main/java/org/apache/commons/math3/distribution/HypergeometricDistribution.j
 +   return (double) sampleSize * getNumberOfSuccesses() / (double) getPopulationSize();
 ```
 
-#### II. Fixed chunks and locations - 1 chunk / 1 location
+#### II. Fixed chunks and locations
+* The number of fixed chunks: 1 chunk
+* The number of fixed locations: 1 location
 ```java
 src/main/java/org/apache/commons/math3/distribution/HypergeometricDistribution.java: 268
 return (double) sampleSize * getNumberOfSuccesses() / (double) getPopulationSize();
@@ -52,7 +60,9 @@ src/main/java/org/apache/commons/math3/distribution/HypergeometricDistribution.j
 +   return (double) sampleSize * getNumberOfSuccesses() / getPopulationSize();
 ```
 
-#### II. Fixed chunks and locations - 1 chunk / 1 location
+#### II. Fixed chunks and locations
+* The number of fixed chunks: 1 chunk
+* The number of fixed locations: 1 location
 ```java
 src/main/java/org/apache/commons/math3/distribution/HypergeometricDistribution.java: 268
 return (double) sampleSize * getNumberOfSuccesses() / getPopulationSize();
@@ -70,7 +80,9 @@ src/main/java/org/apache/commons/math3/distribution/HypergeometricDistribution.j
 +   return (double) getSampleSize() * getNumberOfSuccesses() / (double) getPopulationSize();
 ```
 
-#### II. Fixed chunks and locations - 1 chunk / 1 location
+#### II. Fixed chunks and locations
+* The number of fixed chunks: 1 chunk
+* The number of fixed locations: 1 location
 ```java
 src/main/java/org/apache/commons/math3/distribution/HypergeometricDistribution.java: 268
 return (double) getSampleSize() * getNumberOfSuccesses() / (double) getPopulationSize()

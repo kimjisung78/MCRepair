@@ -1,4 +1,8 @@
-# Closure 2 - Type 3 (T1B / T2F, T3F)
+# Closure 2
+* <h4>Bug type: Type 3 (T1B / T2F, T3F)</h4>
+* <h4>The number of chunks: 2 chunks (1 used chunks / 1, 2 fixed chunks)</h4>
+* <h4>The number of locations: 4 locations (1 used location / 2, 3, 4 fixed locations)</h4>
+<br>
 
 ## 1. Developer's patch
 * `-`: A fixed and deleted location
@@ -17,7 +21,9 @@ src/com/google/javascript/jscomp/TypeCheck.java: 1570-1574
 ```
 <br>
 
-## 2. Used chunks and locations - 1 chunk / 1 location
+## 2. Used chunks and locations - T1B
+* The number of used chunks: 1 chunk
+* The number of used locations: 1 location
 ```java
 src/com/google/javascript/jscomp/TypeCheck.java: 1574
 currentPropertyNames = implicitProto.getOwnPropertyNames();
@@ -40,7 +46,9 @@ src/com/google/javascript/jscomp/TypeCheck.java: 1574
     currentPropertyNames = implicitProto . getOwnPropertyNames ( ) ;
 ```
 
-#### II. Fixed chunks and locations - 1 chunk / 3 locations
+#### II. Fixed chunks and locations
+* The number of fixed chunks: 1 chunk
+* The number of fixed locations: 3 locations
 ```java
 src/com/google/javascript/jscomp/TypeCheck.java: 1574
 Three locations were inserted in front of location 1574.
@@ -69,7 +77,9 @@ src/com/google/javascript/jscomp/TypeCheck.java: 1588-1591
 +   }
 ```
 
-#### II. Fixed chunks and locations - 2 chunks / 4 locations
+#### II. Fixed chunks and locations
+* The number of fixed chunks: 2 chunks
+* The number of fixed locations: 4 locations
 ```java
 src/com/google/javascript/jscomp/TypeCheck.java: 1574
 A location was inserted in front of location 1574.
@@ -105,7 +115,9 @@ src/com/google/javascript/jscomp/TypeCheck.java: 1588-1592
     }
 ```
 
-#### II. Fixed chunks and locations - 2 chunks / 2 locations
+#### II. Fixed chunks and locations
+* The number of fixed chunks: 2 chunks
+* The number of fixed locations: 2 locations
 ```java
 src/com/google/javascript/jscomp/TypeCheck.java: 1574
 A location was inserted in front of location 1574.

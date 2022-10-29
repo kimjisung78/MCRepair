@@ -1,4 +1,8 @@
-# Time 17 - Type 3 (T3B / T3F)
+# Time 17
+* <h4>Bug type: Type 3 (T3B / T2F)</h4>
+* <h4>The number of chunks: 2 chunks (2 used chunks / 1 fixed chunk)</h4>
+* <h4>The number of locations: 5 locations (5 used locations / 2 fixed locations)</h4>
+<br>
 
 ## 1. Developer's patch
 * `-`: A fixed and deleted location
@@ -39,7 +43,9 @@ src/main/java/org/joda/time/DateTimeZone.java: 1167-1179
 ```
 <br>
 
-## 2. Used chunks and locations - 2 chunks / 5 locations
+## 2. Used chunks and locations - T3B
+* The number of used chunks: 2 chunks
+* The number of used locations: 5 locations
 ```java
 src/main/java/org/joda/time/DateTimeZone.java: 1167-1169
 long instantBefore = convertUTCToLocal(instant - 3 * DateTimeConstants.MILLIS_PER_HOUR);
@@ -59,7 +65,7 @@ return convertLocalToUTC(local, false, earlierOrLater ? instantAfter : instantBe
 <br><br>
 
 ## 4. Examples of correct patches
-### 4.1. 52nd patch - T1F
+### 4.1. 52nd patch - T2F
 #### I. Fixed Result
 ```java
 src/main/java/org/joda/time/DateTimeZone.java: 1167-1169
@@ -70,7 +76,9 @@ src/main/java/org/joda/time/DateTimeZone.java: 1167-1169
     if (instantBefore == instantAfter) {
 ```
 
-#### II. Fixed chunks and locations - 1 chunk / 2 locations
+#### II. Fixed chunks and locations
+* The number of fixed chunks: 1 chunk
+* The number of fixed locations: 2 locations
 ```java
 src/main/java/org/joda/time/DateTimeZone.java: 1167-1168
 long instantAfter = instant - 3 * DateTimeConstants.MILLIS_PER_HOUR;

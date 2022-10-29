@@ -1,4 +1,8 @@
-# Lang 10 - Type 3 (T3B / T3F)
+# Lang 10
+* <h4>Bug type: Type 3 (T3B / T2F, T3F)</h4>
+* <h4>The number of chunks: 2 chunks (2 used chunks / 1, 2 fixed chunks)</h4>
+* <h4>The number of locations: 9 locations (9 used locations / 8, 9 fixed locations)</h4>
+<br>
 
 ## 1. Developer's patch
 * `-`: A fixed and deleted location
@@ -19,7 +23,9 @@ src/main/java/org/apache/commons/lang3/time/FastDateParser.java: 304-314
 ```
 <br>
 
-## 2. Used chunks and locations - 2 chunks / 9 locations
+## 2. Used chunks and locations - T3B
+* The number of used chunks: 2 chunks
+* The number of used locations: 9 locations
 ```java
 src/main/java/org/apache/commons/lang3/time/FastDateParser.java: 304
 boolean wasWhite=false;
@@ -62,7 +68,9 @@ src/main/java/org/apache/commons/lang3/time/FastDateParser.java: 304-314
 -       wasWhite= false;
 ```
 
-#### II. Fixed chunks and locations - 2 chunks / 9 locations
+#### II. Fixed chunks and locations
+* The number of fixed chunks: 2 chunks
+* The number of fixed locations: 9 locations
 ```java
 src/main/java/org/apache/commons/lang3/time/FastDateParser.java: 304
 boolean wasWhite=true;
@@ -101,7 +109,9 @@ src/main/java/org/apache/commons/lang3/time/FastDateParser.java: 304-314
 -       wasWhite= false;
 ```
 
-#### II. Fixed chunks and locations - 1 chunk / 8 locations
+#### II. Fixed chunks and locations
+* The number of fixed chunks: 1 chunk
+* The number of fixed locations: 8 locations
 ```java
 src/main/java/org/apache/commons/lang3/time/FastDateParser.java: 307-314
 Location 307 was deleted.
@@ -136,7 +146,9 @@ src/main/java/org/apache/commons/lang3/time/FastDateParser.java: 304-314
 -       wasWhite= false;
 ```
 
-#### II. Fixed chunks and locations - 2 chunks / 9 locations
+#### II. Fixed chunks and locations
+* The number of fixed chunks: 2 chunks
+* The number of fixed locations: 9 locations
 ```java
 src/main/java/org/apache/commons/lang3/time/FastDateParser.java: 304
 boolean white=false;
@@ -175,7 +187,9 @@ src/main/java/org/apache/commons/lang3/time/FastDateParser.java: 304-314
 -       wasWhite= false;
 ```
 
-#### II. Fixed chunks and locations - 2 chunks / 9 locations
+#### II. Fixed chunks and locations
+* The number of fixed chunks: 2 chunks
+* The number of fixed locations: 9 locations
 ```java
 src/main/java/org/apache/commons/lang3/time/FastDateParser.java: 304
 Location 304 was deleted.

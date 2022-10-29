@@ -1,4 +1,8 @@
-# Closure 46 - Type 3 (T2B / T2F, T3F)
+# Closure 46
+* <h4>Bug type: Type 3 (T2B / T2F, T3F)</h4>
+* <h4>The number of chunks: 2 chunks (1 used chunks / 1, 2, 3 fixed chunks)</h4>
+* <h4>The number of locations: 13 locations (13 used locations / 7, 8, 13 fixed locations)</h4>
+<br>
 
 ## 1. Developer's patch
 * `-`: A fixed and deleted location
@@ -24,7 +28,9 @@ src/com/google/javascript/rhino/jstype/RecordType.java: 140-155
 ```
 <br>
 
-## 2. Used chunks and locations - 1 chunk / 13 locations
+## 2. Used chunks and locations - T2F
+* The number of used chunks: 1 chunk
+* The number of used locations: 13 locations
 ```java
 src/com/google/javascript/rhino/jstype/RecordType.java: 140-146, 147-149 (Divided Locations), 150-151 (Divided Locations), 152-155
 @Override
@@ -72,7 +78,9 @@ src/com/google/javascript/jscomp/NameAnalyzer.java: 140-155
     }
 ```
 
-#### II. Fixed chunks and locations - 2 chunks / 7 locations
+#### II. Fixed chunks and locations
+* The number of fixed chunks: 2 chunks
+* The number of fixed locations: 7 locations
 ```java
 src/com/google/javascript/jscomp/NameAnalyzer.java: 142
 Location 142 was deleted.
@@ -111,7 +119,9 @@ src/com/google/javascript/jscomp/NameAnalyzer.java: 140-155
     }
 ```
 
-#### II. Fixed chunks and locations - 3 chunks / 8 locations
+#### II. Fixed chunks and locations
+* The number of fixed chunks: 3 chunks
+* The number of fixed locations: 8 locations
 ```java
 src/com/google/javascript/jscomp/NameAnalyzer.java: 140
 Location 140 was deleted.
@@ -155,7 +165,9 @@ src/com/google/javascript/jscomp/NameAnalyzer.java: 140-155
 -   }
 ```
 
-#### II. Fixed chunks and locations - 1 chunk / 13 locations
+#### II. Fixed chunks and locations
+* The number of fixed chunks: 1 chunk
+* The number of fixed locations: 13 locations
 ```java
 src/com/google/javascript/jscomp/NameAnalyzer.java: 140-146, 147-149 (Divided Locations), 150-151 (Divided Locations), 152-155
 Location 140 was deleted.

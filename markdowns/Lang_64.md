@@ -1,4 +1,8 @@
-# Lang 64 - Type 1 (T3B / T1F)
+# Lang 64
+* <h4>Bug type: Type 3 (T3B / T1F)</h4>
+* <h4>The number of chunks: 2 chunks (2 used chunks / 1 fixed chunk)</h4>
+* <h4>The number of locations: 2 locations (2 used locations / 1 fixed location)</h4>
+<br>
 
 ## 1. Developer's patch
 * `-`: A fixed and deleted location
@@ -44,7 +48,9 @@ src/java/org/apache/commons/lang/enums/ValuedEnum.java: 189-196
 ```
 <br>
 
-## 2. Used chunks and locations - 1 chunk / 1 location
+## 2. Used chunks and locations - T3F
+* The number of used chunks: 2 chunks
+* The number of used locations: 2 locations
 ```java
 src/java/org/apache/commons/lang/enums/ValuedEnum.java: 183
 return iValue - ((ValuedEnum) other).iValue;
@@ -70,7 +76,9 @@ src/java/org/apache/commons/lang/enums/ValuedEnum.java: 183
     return iValue - ((ValuedEnum) other).iValue;
 ```
 
-#### II. Fixed chunks and locations - 1 chunk / 1 location
+#### II. Fixed chunks and locations
+* The number of fixed chunks: 1 chunk
+* The number of fixed locations: 1 location
 ```java
 src/java/org/apache/commons/lang/enums/ValuedEnum.java: 183
 A location was inserted in front of Location 183.

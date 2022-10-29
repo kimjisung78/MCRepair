@@ -1,4 +1,8 @@
-# Closure 40 - Type 3 (T3B / T2F, T3F)
+# Closure 40
+* <h4>Bug type: Type 3 (T3B / T1F, T3F)</h4>
+* <h4>The number of chunks: 2 chunks (2 used chunks / 1, 2 fixed chunks)</h4>
+* <h4>The number of locations: 3 locations (3 used locations / 1, 3 fixed locations)</h4>
+<br>
 
 ## 1. Developer's patch
 * `-`: A fixed and deleted location
@@ -17,7 +21,9 @@ src/com/google/javascript/jscomp/NameAnalyzer.java: 633-640
 ```
 <br>
 
-## 2. Used chunks and locations - 2 chunks / 3 locations
+## 2. Used chunks and locations - T3B
+* The number of used chunks: 2 chunks
+* The number of used locations: 3 locations
 ```java
 src/com/google/javascript/jscomp/NameAnalyzer.java: 635-636
 JsName name = getName(ns.name, false);
@@ -36,7 +42,7 @@ src/com/google/javascript/jscomp/NameAnalyzer.java: 639
 <br><br>
 
 ## 4. Examples of correct patches
-### 4.1. 37th patch - T1F
+### 4.1. 37th patch - T3F
 #### I. Fixed Result
 ```java
 src/com/google/javascript/jscomp/NameAnalyzer.java: 635-639
@@ -49,7 +55,9 @@ src/com/google/javascript/jscomp/NameAnalyzer.java: 635-639
 -   }
 ```
 
-#### II. Fixed chunks and locations - 2 chunks / 3 locations
+#### II. Fixed chunks and locations
+* The number of fixed chunks: 2 chunks
+* The number of fixed locations: 3 locations
 ```java
 src/com/google/javascript/jscomp/NameAnalyzer.java: 635-636
 JsName name = getName(ns.name, true);
@@ -77,7 +85,9 @@ src/com/google/javascript/jscomp/NameAnalyzer.java: 635-639
     }
 ```
 
-#### II. Fixed chunks and locations - 1 chunk / 1 location
+#### II. Fixed chunks and locations
+* The number of fixed chunks: 1 chunk
+* The number of fixed locations: 1 location
 ```java
 src/com/google/javascript/jscomp/NameAnalyzer.java: 635
 JsName name = getName(ns.name, true);
@@ -93,13 +103,15 @@ Its reason is the same as the reason in the 37th patch.
 src/com/google/javascript/jscomp/NameAnalyzer.java: 635-639
 -   JsName name = getName(ns.name, false);
 +   JsName name = getName(ns.name, true);
-    if (name != null) {
+-   if (name != null) {
         refNodes.add(new ClassDefiningFunctionNode(
             name, n, parent, parent.getParent()));
 -   }
 ```
 
-#### II. Fixed chunks and locations - 2 chunks / 3 locations
+#### II. Fixed chunks and locations
+* The number of fixed chunks: 2 chunks
+* The number of fixed locations: 3 locations
 ```java
 src/com/google/javascript/jscomp/NameAnalyzer.java: 635-636
 JsName name = getName(ns.name, true);

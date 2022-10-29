@@ -1,4 +1,8 @@
-# Math 8 - Type 3 (T3B / T1F, T3F)
+# Math 8
+* <h4>Bug type: Type 3 (T3B / T1F, T3F)</h4>
+* <h4>The number of chunks: 2 chunks (2 used chunks / 1, 2 fixed chunks)</h4>
+* <h4>The number of locations: 2 locations (2 used locations / 1, 2 fixed locations)</h4>
+<br>
 
 ## 1. Developer's patch
 * `-`: A fixed and deleted location
@@ -25,7 +29,9 @@ src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java: 1
 ```
 <br>
 
-## 2. Used chunks and locations - 2 chunks / 2 locations
+## 2. Used chunks and locations - T3B
+* The number of used chunks: 2 chunks
+* The number of used locations: 2 locations
 ```java
 src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java: 181
 public T[] sample(int sampleSize) throws NotStrictlyPositiveException {
@@ -57,7 +63,9 @@ src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java: 1
 +   final Object[] out = (Object[]) java.lang.reflect.Array.newInstance(singletons.get(sampleSize).getClass(), sampleSize);
 ```
 
-#### II. Fixed chunks and locations - 2 chunks / 2 locations
+#### II. Fixed chunks and locations
+* The number of fixed chunks: 2 chunks
+* The number of fixed locations: 2 locations
 ```java
 src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java: 181
 public Object[] sample(int sampleSize) throws NotStrictlyPositiveException {
@@ -86,7 +94,9 @@ src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java: 1
 +   final Object[] out = (Object[]) java.lang.reflect.Array.newInstance(singletons.get(1).getClass(), sampleSize);
 ```
 
-#### II. Fixed chunks and locations - 2 chunks / 2 locations
+#### II. Fixed chunks and locations
+* The number of fixed chunks: 2 chunks
+* The number of fixed locations: 2 locations
 ```java
 src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java: 181
 public Object[] sample(int sampleSize) throws NotStrictlyPositiveException {
@@ -108,7 +118,9 @@ src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java: 1
 -   out[i] = sample();
 ```
 
-#### II. Fixed chunks and locations - 1 chunk / 1 location
+#### II. Fixed chunks and locations
+* The number of fixed chunks: 1 chunk
+* The number of fixed locations: 1 location
 ```java
 src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java: 190
 Location 190 was deleted.

@@ -1,4 +1,8 @@
-# Closure 11 - Type 2 (T2B / T2F, T3F)
+# Closure 11
+* <h4>Bug type: Type 3 (T2B / T2F, T3F)</h4>
+* <h4>The number of chunks: 2 chunks (1 used chunk / 1, 2 fixed chunks)</h4>
+* <h4>The number of locations: 3 locations (2 used locations / 2, 3 fixed locations)</h4>
+<br>
 
 ## 1. Developer's patch
 * `-`: A fixed and deleted location
@@ -12,7 +16,9 @@ src/com/google/javascript/jscomp/TypeCheck.java: 1312-1315
 ```
 <br>
 
-## 2. Used chunks and locations - 1 chunk / 2 locations
+## 2. Used chunks and locations - T2B
+* The number of used chunks: 1 chunk
+* The number of used locations: 2 locations
 ```java
 src/com/google/javascript/jscomp/TypeCheck.java: 1314-1315
 } else if (n.getJSType() != null && parent.isAssign()) {
@@ -37,11 +43,13 @@ src/com/google/javascript/jscomp/TypeCheck.java: 1314-1315
 ```java
 src/com/google/javascript/jscomp/TypeCheck.java: 1320-1321
         ensureTyped(t, n);           
--       return;
++       return;
     }
 ```
 
-#### II. Fixed chunks and locations - 2 chunks / 3 locations
+#### II. Fixed chunks and locations
+* The number of fixed chunks: 2 chunks
+* The number of fixed locations: 3 locations
 ```java
 src/com/google/javascript/jscomp/TypeCheck.java: 1314-1315
 Location 1314 was deleted.
@@ -65,7 +73,9 @@ src/com/google/javascript/jscomp/TypeCheck.java: 1314-1315
 -       return;
 ```
 
-#### II. Fixed chunks and locations - 1 chunk / 2 locations
+#### II. Fixed chunks and locations
+* The number of fixed chunks: 1 chunk
+* The number of fixed locations: 2 locations
 ```java
 src/com/google/javascript/jscomp/TypeCheck.java: 1314-1315
 Location 1314 was deleted.

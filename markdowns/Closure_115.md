@@ -1,4 +1,8 @@
-# Closure 115 - Type 3 (T3B / T3F)
+# Closure 115
+* <h4>Bug type: Type 3 (T3B / T3F)</h4>
+* <h4>The number of chunks: 2 chunks (2 used chunks / 2 fixed chunks)</h4>
+* <h4>The number of locations: 11 locations (11 used locations / 10, 11 fixed locations)</h4>
+<br>
 
 ## 1. Developer's patch
 * `-`: A fixed and deleted location
@@ -23,7 +27,9 @@ src/com/google/javascript/jscomp/FunctionInjector.java: 730-732
 ```
 <br>
 
-## 2. Used chunks and locations - 2 chunks / 11 locations
+## 2. Used chunks and locations - T3B
+* The number of used chunks: 2 chunks
+* The number of used locations: 11 locations
 ```java
 src/com/google/javascript/jscomp/FunctionInjector.java: 697-704
 -   boolean hasSideEffects = false;
@@ -71,7 +77,9 @@ src/com/google/javascript/jscomp/FunctionInjector.java: 730-732
 -   }
 ```
 
-#### II. Fixed chunks and locations - 2 chunks / 11 locations
+#### II. Fixed chunks and locations
+* The number of fixed chunks: 2 chunks
+* The number of fixed locations: 11 locations
 ```java
 src/com/google/javascript/jscomp/FunctionInjector.java: 697-704
 boolean hasSideEffects = block.hasChildren();
@@ -110,7 +118,9 @@ src/com/google/javascript/jscomp/FunctionInjector.java: 730-732
 -   }
 ```
 
-#### II. Fixed chunks and locations - 2 chunks / 11 locations
+#### II. Fixed chunks and locations
+* The number of fixed chunks: 2 chunks
+* The number of fixed locations: 11 locations
 ```java
 src/com/google/javascript/jscomp/FunctionInjector.java: 697-704
 boolean hasSideEffects = block.hasOneChild();
@@ -148,7 +158,9 @@ src/com/google/javascript/jscomp/FunctionInjector.java: 730-732
 -   }
 ```
 
-#### II. Fixed chunks and locations - 2 chunks / 11 locations
+#### II. Fixed chunks and locations
+* The number of fixed chunks: 2 chunks
+* The number of fixed locations: 11 locations
 ```java
 src/com/google/javascript/jscomp/FunctionInjector.java: 697-704
 Location 697 was deleted.
@@ -190,7 +202,9 @@ src/com/google/javascript/jscomp/FunctionInjector.java: 730-732
 -   }
 ```
 
-#### II. Fixed chunks and locations - 2 chunks / 10 locations
+#### II. Fixed chunks and locations
+* The number of fixed chunks: 2 chunks
+* The number of fixed locations: 10 locations
 ```java
 src/com/google/javascript/jscomp/FunctionInjector.java: 698-704
 Location 698 was deleted.

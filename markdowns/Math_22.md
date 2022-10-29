@@ -1,4 +1,8 @@
-# Math 22 - Type 3 (T3B / T3F)
+# Math 22
+* <h4>Bug type: Type 3 (T3B / T3F)</h4>
+* <h4>The number of chunks: 2 chunks (2 used chunks / 2 fixed chunks)</h4>
+* <h4>The number of locations: 2 locations (2 used locations / 2 fixed locations)</h4>
+<br>
 
 ## 1. Developer's patch
 * `-`: A fixed and deleted location
@@ -20,7 +24,9 @@ src/main/java/org/apache/commons/math3/distribution/UniformRealDistribution.java
 ```
 <br>
 
-## 2. Used chunks and locations - 2 chunks / 2 locations
+## 2. Used chunks and locations - T3B
+* The number of used chunks: 2 chunks
+* The number of used locations: 2 locations
 ```java
 src/main/java/org/apache/commons/math3/distribution/FDistribution.java: 275
 return true;
@@ -51,7 +57,9 @@ src/main/java/org/apache/commons/math3/distribution/UniformRealDistribution.java
 +   return true;
 ```
 
-#### II. Fixed chunks and locations - 2 chunks / 2 locations
+#### II. Fixed chunks and locations
+* The number of fixed chunks: 2 chunks
+* The number of fixed locations: 2 locations
 ```java
 src/main/java/org/apache/commons/math3/complex/Complex.java: 305
 return INF;

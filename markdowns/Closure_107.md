@@ -1,4 +1,8 @@
-# Closure 107 - Type 2 (T1B / T1F, T2F)
+# Closure 107
+* <h4>Bug type: Type 2 (T1B / T1F, T2F)</h4>
+* <h4>The number of chunks: 1 chunk (1 used chunk / 1 fixed chunks)</h4>
+* <h4>The number of locations: 2 locations (1 used location / 1, 2 fixed locations)</h4>
+<br>
 
 ## 1. Developer's patch
 * `-`: A fixed and deleted location
@@ -28,7 +32,9 @@ src/com/google/javascript/jscomp/CommandLineRunner.java: 844-862
 ```
 <br>
 
-## 2. Used chunks and locations - 1 chunk / 1 location
+## 2. Used chunks and locations - T1B
+* The number of used chunks: 1 chunk
+* The number of used locations: 1 location
 ```java
 src/com/google/javascript/jscomp/CommandLineRunner.java: 862
 FAULT_OF_OMISSION
@@ -49,7 +55,9 @@ src/com/google/javascript/jscomp/CommandLineRunner.java: 861
 ```
 <br>
 
-#### II. Fixed chunks and locations - 1 chunk / 1 location
+#### II. Fixed chunks and locations 
+* The number of fixed chunks: 1 chunk
+* The number of fixed locations: 1 location
 ```java
 src/com/google/javascript/jscomp/CommandLineRunner.java: 861
 Location 861 was deleted.
@@ -67,7 +75,9 @@ src/com/google/javascript/jscomp/CommandLineRunner.java: 861
 +   options.messageBundle = null;
 ```
 
-#### II. Fixed chunks and locations - 1 chunk / 1 location
+#### II. Fixed chunks and locations
+* The number of fixed chunks: 1 chunk
+* The number of fixed locations: 1 location
 ```java
 src/com/google/javascript/jscomp/CommandLineRunner.java: 861
 options.messageBundle = null;
@@ -82,7 +92,6 @@ options.messageBundle = null;
 ```java
 src/com/google/javascript/jscomp/CommandLineRunner.java: 852-862
 -   } else if (CompilationLevel.ADVANCED_OPTIMIZATIONS == level) {
-+   }
         // In SIMPLE or WHITESPACE mode, if the user hasn't specified a
         // translations file, they might reasonably try to write their own
         // implementation of goog.getMsg that makes the substitution at
@@ -92,11 +101,13 @@ src/com/google/javascript/jscomp/CommandLineRunner.java: 852-862
         // so we might as well inline it. But shut off the i18n warnings,
         // because the user didn't really ask for i18n.
 -       options.messageBundle = new EmptyMessageBundle();
--   }
+    }
 ```
 * Locations 853-860 are not comment locations related to "FAULT_OF_OMISSION." 
 
-#### II. Fixed chunks and locations - 1 chunk / 3 locations
+#### II. Fixed chunks and locations 
+* The number of fixed chunks: 1 chunk
+* The number of fixed locations: 2 locations
 ```java
 src/com/google/javascript/jscomp/CommandLineRunner.java: 852
 }

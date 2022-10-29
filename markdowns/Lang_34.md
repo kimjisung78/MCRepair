@@ -1,4 +1,8 @@
-# Lang 34 - Type 3 (T3B / T1F, T3F)
+# Lang 34
+* <h4>Bug type: Type 3 (T3B / T1F, T3F)</h4>
+* <h4>The number of chunks: 2 chunks (2 used chunks / 1, 2 fixed chunks)</h4>
+* <h4>The number of locations: 2 locations (2 used locations / 1, 2 fixed locations)</h4>
+<br>
 
 ## 1. Developer's patch
 * `-`: A fixed and deleted location
@@ -21,7 +25,9 @@ src/main/java/org/apache/commons/lang3/builder/ToStringStyle.java: 162-165
 ```
 <br>
 
-## 2. Used chunks and locations - 2 chunks / 2 locations
+## 2. Used chunks and locations - T3B
+* The number of used chunks: 2 chunks
+* The number of used locations: 2 locations
 ```java
 src/main/java/org/apache/commons/lang3/builder/ToStringStyle.java: 148
 return REGISTRY.get() != null ? REGISTRY.get() : Collections.<Object, Object>emptyMap();
@@ -47,7 +53,9 @@ src/main/java/org/apache/commons/lang3/builder/ToStringStyle.java: 164
 +   return m != null && m.containsKey(value);
 ```
 
-#### II. Fixed chunks and locations - 1 chunk / 1 location
+#### II. Fixed chunks and locations
+* The number of fixed chunks: 1 chunk
+* The number of fixed locations: 1 location
 ```java
 src/main/java/org/apache/commons/lang3/builder/ToStringStyle.java: 164
 return m != null && m.containsKey(value);
@@ -68,7 +76,9 @@ src/main/java/org/apache/commons/lang3/builder/ToStringStyle.java: 164
 +   return m != null && m.containsKey(value);
 ```
 
-#### II. Fixed chunks and locations - 2 chunks / 2 locations
+#### II. Fixed chunks and locations
+* The number of fixed chunks: 2 chunks
+* The number of fixed locations: 2 locations
 ```java
 src/main/java/org/apache/commons/lang3/builder/ToStringStyle.java: 148
 return REGISTRY.get() != null ? REGISTRY.get() : Collections.emptyMap();
@@ -94,7 +104,9 @@ src/main/java/org/apache/commons/lang3/builder/ToStringStyle.java: 164
 +   return m != null && m.containsKey(value);
 ```
 
-#### II. Fixed chunks and locations - 2 chunks / 2 locations
+#### II. Fixed chunks and locations
+* The number of fixed chunks: 2 chunks
+* The number of fixed locations: 2 locations
 ```java
 src/main/java/org/apache/commons/lang3/builder/ToStringStyle.java: 148
 return REGISTRY.get();

@@ -1,4 +1,8 @@
-# Closure 7 - Type 3 (T1B / T2F, T3F)
+# Closure 7
+* <h4>Bug type: Type 3 (T1B / T2F, T3F)</h4>
+* <h4>The number of chunks: 2 chunks (1 used chunks / 1, 2 fixed chunks)</h4>
+* <h4>The number of locations: 2 locations (1 used location / 2 fixed locations)</h4>
+<br>
 
 ## 1. Developer's patch
 * `-`: A fixed and deleted location
@@ -22,7 +26,9 @@ src/com/google/javascript/jscomp/type/ChainableReverseAbstractInterpreter.java: 
 ```
 <br>
 
-## 2. Used chunks and locations - 1 chunk / 1 location
+## 2. Used chunks and locations - T1B
+* The number of used chunks: 1 chunk
+* The number of used locations: 1 location
 ```java
 src/com/google/javascript/jscomp/type/ChainableReverseAbstractInterpreter.java: 613
 return resultEqualsValue && ctorType.isSubtype(type) ? ctorType : null;
@@ -45,7 +51,9 @@ src/com/google/javascript/jscomp/type/ChainableReverseAbstractInterpreter.java: 
     }
 ```
 
-#### II. Fixed chunks and locations - 2 chunks / 2 locations
+#### II. Fixed chunks and locations
+* The number of fixed chunks: 2 chunks
+* The number of fixed locations: 2 locations
 ```java
 src/com/google/javascript/jscomp/TypeCheck.java: 613
 A location was inserted in front of location 613.
@@ -69,7 +77,9 @@ src/com/google/javascript/jscomp/type/ChainableReverseAbstractInterpreter.java: 
 +       return resultEqualsValue ? ctorType : null;
 ```
 
-#### II. Fixed chunks and locations - 1 chunk / 2 locations
+#### II. Fixed chunks and locations
+* The number of fixed chunks: 1 chunk
+* The number of fixed locations: 2 locations
 ```java
 src/com/google/javascript/jscomp/TypeCheck.java: 613
 if (resultEqualsValue && ctorType.isSubtype(type))

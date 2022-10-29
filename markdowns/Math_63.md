@@ -1,4 +1,8 @@
-# Math 63 - Type 2 (T1B / T1F, T2F)
+# Math 63
+* <h4>Bug type: Type 2 (T1B / T1F, T2F)</h4>
+* <h4>The number of chunks: 1 chunk (1 used chunk / 1 fixed chunk)</h4>
+* <h4>The number of locations: 5 locations (1 used location / 1, 5 fixed locations)</h4>
+<br>
 
 ## 1. Developer's patch
 * `-`: A fixed and deleted location
@@ -12,7 +16,9 @@ src/main/java/org/apache/commons/math/util/MathUtils.java: 416-418
 ```
 <br>
 
-## 2. Used chunks and locations - 1 chunk / 1 location
+## 2. Used chunks and locations - T1B
+* The number of used chunks: 1 chunk
+* The number of used locations: 1 location
 ```java
 src/main/java/org/apache/commons/math/util/MathUtils.java: 417
 return (Double.isNaN(x) && Double.isNaN(y)) || x == y;
@@ -33,13 +39,16 @@ src/main/java/org/apache/commons/math/util/MathUtils.java: 121
 +   return x==y;
 ```
 
-#### II. Fixed chunks and locations - 1 chunk / 1 location
+#### II. Fixed chunks and locations
+* The number of fixed chunks: 1 chunk
+* The number of fixed locations: 1 location
 ```java
 src/main/java/org/apache/commons/math/util/MathUtils.java: 121
 return x==y;
 ```
 
 #### III. Decided Reason 
+The result of a floating-point comparison, as determined by the specification of the IEEE 754 standard, is:
 Floating-point equality testing is performed in accordance with the rules of the IEEE 754 standard:
 * If either operand is NaN, then the result of == is false but the result of != is true. Indeed, the test x!=x is true if and only if the value of x is NaN. The methods Float.isNaN and Double.isNaN may also be used to test whether a value is NaN.
 * Positive zero and negative zero are considered equal. For example, -0.0==0.0 is true.
@@ -68,7 +77,9 @@ src/main/java/org/apache/commons/math/util/MathUtils.java: 121
 +   }
 ```  
 
-#### II. Fixed chunks and locations - 1 chunk / 5 locations
+#### II. Fixed chunks and locations
+* The number of fixed chunks: 1 chunk
+* The number of fixed locations: 5 locations
 ```java
 src/main/java/org/apache/commons/math/util/MathUtils.java: 121
 if (x == y) {
