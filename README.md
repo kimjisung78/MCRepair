@@ -1,5 +1,14 @@
 # MCRepair
 * An Automated Program Repair (APR) technique that applied a buggy block, patch optimization, and CodeBERT to target complex multi-chunk bugs.
+  * Buggy block: A novel method that binds buggy chunks into a multi-buggy chunk and preprocesses the chunk with its buggy contexts for patch space reduction and dependency problems.
+  * Patch optimization: A novel strategy that effectively combines the generated candidate patches with patch space reduction.
+  * CodeBERT: A BERT for source code datasets to address the lack of datasets and out-of-vocabulary problems. 
+* Figures
+  * [Figure 1:](./figures/Figure1.png) An overview of MCRepair.
+    <img src="./figures/Figure1.png" width="100%"/>
+  * [Figure 2:](./figures/Figure2.png) The details of Ingredient Extraction and Buggy Block Preprocessing about an example of the source code datasets.
+  * [Figure 3:](./figures/Figure3.png) The details of Patch Optimization of the Candidate Patches.
+  * [Figure 4:](./figures/Figure4.png) RQ1. Venn Diagram for Table 3.
 <br><br>
 
 ## 1. Location-level criterion
