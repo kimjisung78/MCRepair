@@ -45,4 +45,7 @@ src/main/java/org/apache/commons/lang3/SystemUtils.java: 1672
 src/main/java/org/apache/commons/lang3/SystemUtils.java: 1672
 static int toJavaVersionInt(String version) {
 ```
+
+#### III. Explanation
+Although the bug had correct patches in its patch space, its evaluated result was CO (Compilable). Because the bug has have [this problem](https://github.com/rjust/defects4j/issues/481), Defects4J must address the problem.
 <br><br>

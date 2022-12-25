@@ -134,8 +134,9 @@ The difficulties are in the order of Type 3, Type 2, and Type 1. If an APR techn
   |--------- Type 2 (1)    : [M_63]
   |--------- Type 3 (8)    : [M_8, 18, 22, 46, 72, 77, 79, 98]
   |------ Mockito (4)
-  |--------- Type 1 (3)    : [MC_5, 22, 29]
+  |--------- Type 1 (2)    : [MC_5, 29]
   |--------- Type 2 (1)    : [MC_1]
+  |--------- Type 3 (1)    : [MC_22]
   |------ Time (3)
   |--------- Type 1 (2)    : [T_4, 19]
   |--------- Type 3 (1)    : [T_17]
@@ -145,19 +146,20 @@ The difficulties are in the order of Type 3, Type 2, and Type 1. If an APR techn
 ### 5.3. Statstics of correctly repaired bugs per chunk (66)
 ```powershell
   |--- Total (66)
-  |------ 1 chunk (45)
+  |------ 1 chunk (44)
   |--------- Chart (4)     : [C_8, 9, 11, 20]
   |--------- Closure (13)  : [CL_10, 19, 38, 57, 62, 70, 86, 92, 101, 107, 109, 122, 125]
   |--------- Lang (6)      : [L_6, 29, 43, 51, 57, 59]
   |--------- Math (16)     : [M_2, 5, 27, 30, 32, 34, 41, 57, 58, 63, 70, 75, 80, 82, 85, 104]
-  |--------- Mockito (4)   : [MC_1, 5, 22, 29]
+  |--------- Mockito (3)   : [MC_1, 5, 29]
   |--------- Time (2)      : [T_7, 19]
-  |------ 2 chunks (17)
+  |------ 2 chunks (18)
   |--------- Chart (1)     : [C_1]
   |--------- Closure (5)   : [CL_2, 7, 11, 40, 115]
   |--------- Lang (3)      : [L_10, 34, 64]
   |--------- Math (7)      : [M_8, 22, 46, 72, 77, 79, 98]
   |--------- Time (1)      : [T_17]
+  |--------- Mockito (1)   : [MC_22]
   |------ 3 chunks (3)
   |--------- Closure (3)   : [CL_13, 46, 102]
   |------ 4 chunks (1)
@@ -168,12 +170,12 @@ The difficulties are in the order of Type 3, Type 2, and Type 1. If an APR techn
 ### 5.4. Statstics of correctly repaired bugs per location (66)
 ```powershell
   |--- Total (66)
-  |------ 1 location (38)
+  |------ 1 location (37)
   |--------- Chart (4)     : [C_8, 9, 11, 20]
   |--------- Closure (9)   : [CL_10, 38, 57, 62, 70, 92, 109, 122, 125]
   |--------- Lang (5)      : [L_6, 29, 43, 57, 59]
   |--------- Math (15)     : [M_2, 5, 27, 30, 32, 34, 41, 57, 58, 70, 75, 80, 82, 85, 104]
-  |--------- Mockito (3)   : [MC_5, 22, 29]
+  |--------- Mockito (2)   : [MC_5, 29]
   |--------- Time (2)      : [T_7, 19]
   |------ 2 locations (12)
   |--------- Chart (1)     : [C_1]
@@ -187,9 +189,10 @@ The difficulties are in the order of Type 3, Type 2, and Type 1. If an APR techn
   |------ 4 locations (3)
   |--------- Closure (2)   : [CL_2, 101]
   |--------- Math (1)      : [M_18]
-  |------ 5 locations (2)
+  |------ 5 locations (3)
   |--------- Math (1)      : [M_63]
   |--------- Time (1)      : [T_17]
+  |--------- Mockito (1)   : [MC_22]
   |------ 9 locations (1)
   |--------- Lang (1)      : [L_10]
   |------ 10 locations
