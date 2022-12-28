@@ -5,10 +5,13 @@
   * CodeBERT: A BERT for source code datasets to address the lack of datasets and out-of-vocabulary problems. 
 * Figures
   * [Figure 1:](./figures/Figure1.png) An overview of MCRepair.
-    <img src="./figures/Figure1.png" width="70%"/>
+    <img src="./figures/Figure1.png" width="100%"/>
   * [Figure 2:](./figures/Figure2.png) The details of Ingredient Extraction and Buggy Block Preprocessing about an example of the source code datasets.
   * [Figure 3:](./figures/Figure3.png) The details of Patch Optimization of the Candidate Patches.
-  * [Figure 4:](./figures/Figure4.png) RQ1. Venn Diagram for Table 3.
+  * [Figure 4:](./figures/Figure4.png) RQ1. Venn Diagram for Table 2.
+  * Figure 5: RQ2. Statistics per range on Defects4J with Perfect Fault Localization.
+    * [Figure 5: (a) Chunk range](./figures/Figure5a.jpg)
+    * [Figure 5: (b) Location range](./figures/Figure5b.jpg)
 <br><br>
 
 ## 1. Location-level criterion
@@ -203,4 +206,3 @@ The difficulties are in the order of Type 3, Type 2, and Type 1. If an APR techn
   |--------- Closure (1)   : [CL_46]
 ```
 <br><br>
-
