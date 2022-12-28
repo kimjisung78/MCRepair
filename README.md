@@ -4,10 +4,10 @@
   * Patch optimization: A novel strategy that effectively combines the generated candidate patches with patch space reduction.
   * CodeBERT: A BERT for source code datasets to address the lack of datasets and out-of-vocabulary problems. 
 * Figures
-  * [Figure 1:](./figures/Figure1.png) An overview of MCRepair.
+  * [Figure 1:](./figures/Figure1.png) An overview of MCRepair. (▲: Only use for training or validation, ●: Only use for generation)
     <img src="./figures/Figure1.png" width="100%"/>
-  * [Figure 2:](./figures/Figure2.png) The details of Ingredient Extraction and Buggy Block Preprocessing about an example of the source code datasets.
-  * [Figure 3:](./figures/Figure3.png) The details of Patch Optimization of the Candidate Patches.
+  * [Figure 2:](./figures/Figure2.png) The details of Ingredient Extraction and Buggy Block Preprocessing about an example of the source code datasets. (ST: Special Tokens, TR: Truncation)
+  * [Figure 3:](./figures/Figure3.png) The details of Patch Optimization of the Candidate Patches. (DP: Duplicated, SE: Syntax Error, TC: Termination Code)
   * [Figure 4:](./figures/Figure4.png) RQ1. Venn Diagram for Table 2.
   * Figure 5: RQ2. Statistics per range on Defects4J with Perfect Fault Localization.
     * [Figure 5: (a) Chunk range](./figures/Figure5a.jpg)
