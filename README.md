@@ -5,7 +5,7 @@
   * CodeBERT: A BERT for source code datasets to address the lack of datasets and out-of-vocabulary problems. 
 * Figures
   * [Figure 1:](./figures/Figure1.png) An overview of MCRepair. (▲: Only use for training or validation, ●: Only use for generation)
-    <img src="./figures/Figure1.png" width="100%"/>
+    <img src="./figures/Figure1.png" width="70%"/>
   * [Figure 2:](./figures/Figure2.png) The details of Ingredient Extraction and Buggy Block Preprocessing about an example of the source code datasets. (ST: Special Tokens, TR: Truncation)
   * [Figure 3:](./figures/Figure3.png) The details of Patch Optimization of the Candidate Patches. (DP: Duplicated, SE: Syntax Error, TC: Termination Code)
   * [Figure 4:](./figures/Figure4.png) RQ1. Venn Diagram for Table 2.
