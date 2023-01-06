@@ -87,7 +87,7 @@ Object badequals = new BadEquals();
 assertFalse(areEqual(badequals,badequals));
 ```
 
-In addition, If you want to check the equality on Mockito, you must write a testcase as follows.
+In addition, If you want to check specific exception(s) on Mockito, you must write a testcase as follows.
 ```java
 given(otherServiceMock.bar()).willThrow(new CustomException());
 
