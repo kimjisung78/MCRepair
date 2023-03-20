@@ -52,7 +52,7 @@ return parseTypeExpression(token);
 ```
 
 #### III. Explanation
-```parseTypeExpression(token)``` method already returns either ```newNode(Token.QMARK)``` of ```JsDocToken.QMARK``` or ```parseBasicTypeExpression(token)``.
+```parseTypeExpression(token)``` method returns ```newNode(Token.QMARK)``` for ```JsDocToken.QMARK``` as in ```parseBasicTypeExpression(token)``.
 <br>
 
 ### 4.2. 447th patch - T1F

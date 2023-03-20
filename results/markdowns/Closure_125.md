@@ -48,7 +48,7 @@ if (fnType != null && ! fnType.isNativeObjectType()) {
 ```
 
 #### III. Explanation
-```isNativeObjectType()``` method of ```FunctionType``` class indicates that the method do not include ```hasInstanceType()``` method of the class. Therefore, ```FunctionType``` class has been implemented as follows:
+```isNativeObjectType()``` method in ```FunctionType``` class indicates that the method do not call ```hasInstanceType()``` method in the class. Therefore, ```FunctionType``` class has been implemented as follows:
 ```java
 src/com/google/javascript/rhino/jstype/FunctionType.java: 1142-1145
 if (!isNativeObjectType()) {

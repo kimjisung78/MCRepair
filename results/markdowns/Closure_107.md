@@ -64,7 +64,7 @@ Location 861 was deleted.
 ```
 
 #### III. Explanation
-```EmptyMessageBundle ``` class only includes empty and null values. Therefore, ```options.messageBundle = new EmptyMessageBundle();``` is optional. Also, the deletion does not occur warnings and errors.
+```EmptyMessageBundle ``` class only includes empty and null values. Therefore, ```options.messageBundle = new EmptyMessageBundle();``` is optional. Also, the deletion does not occur with any warnings and errors.
 <br>
 
 ### 4.2. 258th patch - T1F
@@ -84,7 +84,7 @@ options.messageBundle = null;
 ```
 
 #### III. Explanation
-```EmptyMessageBundle ``` class only includes empty and null values. Therefore, ```options.messageBundle = new EmptyMessageBundle();``` is optional. Also, the change does not occur warnings and errors.
+```EmptyMessageBundle ``` class only includes empty and null values. Therefore, ```options.messageBundle = new EmptyMessageBundle();``` is optional. Also, the change does not occur with any warnings and errors.
 <br><br>
 
 ### 4.3. 268th patch - T2F

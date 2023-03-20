@@ -1,4 +1,16 @@
 # MCRepair
+If you want to use this project, please cite our paper published at SAC'23.
+```
+@inproceedings{MCRepair-2023,
+    title = "MCRepair: Multi-Chunk Program Repair via Patch Optimization with Buggy Block",
+    author = "Jisung Kim and Byungjeong Lee",
+    booktitle = "PROCEEDINGS OF THE 2023 ACM SYMPOSIUM ON APPLIED COMPUTING (SAC 2023)",
+    year = "2023",
+    doi = "https://doi.org/10.1145/3555776.3577762",
+    pages = "1508--1515",
+}
+```
+
 * An Automated Program Repair (APR) technique that applied a buggy block, patch optimization, and CodeBERT to target complex multi-chunk bugs.
   * Buggy block: A novel method that binds buggy chunks into a multi-buggy chunk and preprocesses the chunk with its buggy contexts for patch space reduction and dependency problems.
   * Patch optimization: A novel strategy that effectively combines the generated candidate patches with patch space reduction.

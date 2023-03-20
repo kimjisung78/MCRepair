@@ -92,5 +92,5 @@ src/main/java/org/apache/commons/math/util/MathUtils.java: 1626
 ```
 
 ### III. Explanation
-```distance``` method just returns the distance between the two points for checking to overlap. Therefore, only changing Location 1626 can check to overlap.
+```distance``` method just returns the distance between the two points for checking to overlap. Therefore, only changing Location 1626 check to the overlap.
 <br><br>

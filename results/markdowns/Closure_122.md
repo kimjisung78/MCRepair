@@ -49,5 +49,5 @@ if (comment.getValue().indexOf("/* @") != -1 || comment.getValue().indexOf("@") 
 ```
 
 #### III. Explanation
-To fix the bug, ```if (comment.getValue().indexOf("/* @") != -1 || comment.getValue().indexOf("\n * @") != -1) {``` must changed that it must find comments that include ```@```, a character of comment.
+To fix the bug, ```if (comment.getValue().indexOf("/* @") != -1 || comment.getValue().indexOf("\n * @") != -1) {``` must changed that it must find comments that include the ```@``` character.
 <br><br>

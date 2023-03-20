@@ -66,5 +66,5 @@ return INF;
 ```
 
 #### III. Explanation
-```null != null``` is false.
+```null != null``` is always false.
 <br><br>

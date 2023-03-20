@@ -80,14 +80,14 @@ assertTrue(areEqual(badequals,badequals));
 ```
 
 To fix the bug, the bug must be changed that it returns false when an exception occurs or exceptions are compared, using a try-catch statement. 
-Furthermore, because the testcase of the eqaulity is very bad, Defects4J should change the testcase as follows.
+Furthermore, because the testcase is very bad, Defects4J should change it as follows.
 ```java
 test/org/mockito/internal/matchers/EqualityTest.java: 23-24
 Object badequals = new BadEquals();
 assertFalse(areEqual(badequals,badequals));
 ```
 
-In addition, If you want to check specific exception(s) on Mockito, you must write a testcase as follows.
+In addition, The reason why check the equality is to detect specific exception(s). If you want to check specific exception(s) on Mockito, you must write a testcase as follows.
 ```java
 given(otherServiceMock.bar()).willThrow(new CustomException());
 

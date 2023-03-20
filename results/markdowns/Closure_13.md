@@ -105,7 +105,4 @@ Location 126 was deleted.
 src/com/google/javascript/jscomp/PeepholeOptimizationsPass.java: 128
 A location was inserted in front of location 128.
 ```
-
-#### III. Explanation
-A ```void``` method is equivalent to a method that performs ```return;```.
 <br><br>
