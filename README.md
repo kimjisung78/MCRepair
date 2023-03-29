@@ -1,5 +1,5 @@
 # MCRepair
-If you want to use this project, please cite our paper published at SAC'23.
+If you want to use this project, please cite our paper published at SAC'23. In addition, my presentation file is in [the following link.](./ppts/ACM_SAC2023_Presentation_20230328.pdf)
 ```
 @inproceedings{MCRepair-2023,
     title = "MCRepair: Multi-Chunk Program Repair via Patch Optimization with Buggy Block",
