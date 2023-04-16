@@ -139,5 +139,5 @@ if (indexOfVararg == - 1) {
 ```
 
 ### III. Explanation
-Its reason is the same as the reason in the 206 patch.
+Its reason is the same as the reason in the 206th patch.
 <br><br>
