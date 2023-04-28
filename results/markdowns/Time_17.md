@@ -81,7 +81,7 @@ src/main/java/org/joda/time/DateTimeZone.java: 1167-1169
 * The number of fixed locations: 2 locations
 ```java
 src/main/java/org/joda/time/DateTimeZone.java: 1167-1168
-long instantAfter = instant - 3 * DateTimeConstants.MILLIS_PER_HOUR;
+long instantBefore = instant - 3 * DateTimeConstants.MILLIS_PER_HOUR;
 long instantAfter = instant + 3 * DateTimeConstants.MILLIS_PER_HOUR;
 ```
 
