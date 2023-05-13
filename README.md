@@ -32,7 +32,7 @@ If you want to use this project, please cite our paper published at SAC'23. In a
 |2023-03-28|ACM SAC 2023 (Software Engineering Track)|Uploaded the MCRepair's PPT file.|
 |2023-05-13|Evaluated Results|Updated the MCRepair's results for combined patches and repaired bugs.|
 
-<br><br>
+<br>
 
 ## 1. Location-level criterion
 * We did not consider null, blank, and comment locations that were not related to “FAULT_OF_OMISSION.”
