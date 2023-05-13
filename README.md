@@ -26,6 +26,13 @@ If you want to use this project, please cite our paper published at SAC'23. In a
     * [Figure 5: (b) Location range](./figures/Figure5b.jpg)
 <br><br>
 
+## Change Logs
+|Date|Title|Descrition|
+|---|---|---|
+|2023-03-28|ACM SAC 2023 (Software Engineering Track)|Uploaded the MCRepair's PPT file.|
+|2023-05-13|Evaluated Results|Updated the MCRepair's results for combined patches and repaired bugs.|
+<br><br>
+
 ## 1. Location-level criterion
 * We did not consider null, blank, and comment locations that were not related to “FAULT_OF_OMISSION.”
     - “FAULT_OF_OMISSION” is a buggy location related to insertions.
@@ -49,7 +56,15 @@ The difficulties are in the order of Type 3, Type 2, and Type 1. If an APR techn
     - T3F: A Type 3 bug that fixes chunks
 <br><br>
 
-## 3. Statstics of bugs (66/75)
+## 3. Statstics of combined patches per evaluated result (172/1.2 K)
+```powershell
+  |--- Total (172/1,223)
+  |------ Plausible: 1,223
+  |------ Correct: 172
+```
+<br><br>
+
+## 4. Statstics of repaired bugs per evaluated result (66/75)
 ```powershell
   |--- Total (66/75)
   |------ Chart (5/6)
@@ -71,7 +86,7 @@ The difficulties are in the order of Type 3, Type 2, and Type 1. If an APR techn
 ```
 <br><br>
 
-## 4. Details of correctly repaired bugs (66)
+## 5. Details of correctly repaired bugs (66)
 * Chart (5)
   * [C_1](./results/markdowns/Chart_1.md), [C_8](./results/markdowns/Chart_8.md), [C_9](./results/markdowns/Chart_9.md)
   * [C_11](./results/markdowns/Chart_11.md)
@@ -117,8 +132,8 @@ The difficulties are in the order of Type 3, Type 2, and Type 1. If an APR techn
   * [T_17](./results/markdowns/Time_17.md), [T_19](./results/markdowns/Time_19.md)
 <br><br>
 
-## 5. Statstics of correctly repaired bugs (66)
-### 5.1. Statstics of correctly repaired bugs (66)
+## 6. Statstics of correctly repaired bugs (66)
+### 6.1. Statstics of correctly repaired bugs (66)
 ```powershell
   |--- Total (66)
   |------ Chart (5)    : [C_1, 8, 9, 11, 20]
@@ -130,7 +145,7 @@ The difficulties are in the order of Type 3, Type 2, and Type 1. If an APR techn
 ```
 <br>
 
-### 5.2. Statstics of correctly repaired bugs per bug type (66)
+### 6.2. Statstics of correctly repaired bugs per bug type (66)
 ```powershell
   |--- Total (66)
   |------ Chart (5)
@@ -158,7 +173,7 @@ The difficulties are in the order of Type 3, Type 2, and Type 1. If an APR techn
 ```
 <br>
 
-### 5.3. Statstics of correctly repaired bugs per chunk (66)
+### 6.3. Statstics of correctly repaired bugs per chunk (66)
 ```powershell
   |--- Total (66)
   |------ 1 chunk (44)
@@ -182,7 +197,7 @@ The difficulties are in the order of Type 3, Type 2, and Type 1. If an APR techn
 ```
 <br>
 
-### 5.4. Statstics of correctly repaired bugs per location (66)
+### 6.4. Statstics of correctly repaired bugs per location (66)
 ```powershell
   |--- Total (66)
   |------ 1 location (37)
