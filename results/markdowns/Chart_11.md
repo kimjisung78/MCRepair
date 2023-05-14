@@ -65,7 +65,7 @@ PathIterator iterator1 = p2.getPathIterator(null);
 ```
 
 #### III. Explanation
-To fix the bug, the bug should be changed that it compares ```p1``` and ```p2``` iterators. 
+To fix the bug, its source code should be changed that it compares ```p1``` and ```p2``` iterators. 
 <br><br>
 
 ### 4.3. 410th patch - T1F 

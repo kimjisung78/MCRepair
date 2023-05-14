@@ -47,5 +47,5 @@ return chromosomes.stream().iterator();
 ```
 
 #### III. Explanation
-To fix the bug, the bug must be changed that it returns an iterator of ```chromosomes``` field.
+To fix the bug, its source code must be changed that it returns an iterator of ```chromosomes``` field.
 <br><br>

@@ -86,5 +86,5 @@ long instantAfter = instant + 3 * DateTimeConstants.MILLIS_PER_HOUR;
 ```
 
 #### III. Explanation
-To fix the bug, the bug should be changed that it compares two instants wihtout ```convertUTCToLocal``` method.
+To fix the bug, its source code should be changed that it compares two instants wihtout ```convertUTCToLocal``` method.
 <br><br>

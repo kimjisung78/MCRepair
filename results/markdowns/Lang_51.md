@@ -77,7 +77,7 @@ A location was inserted in front of Location 682.
 ```
 
 #### Explanation
-To fix the bug, the bug must changed that it prevents the fall through problem about ```case 3```.
+To fix the bug, its source code must changed that it prevents the fall through problem about ```case 3```.
 <br><br>
 
 ### 4.3. 98th patch - T2F
@@ -101,7 +101,7 @@ src/java/org/apache/commons/lang/BooleanUtils.java: 681
 ```
 
 #### Explanation
-To fix the bug, the bug must changed that it prevents the fall through problem about ```case 3```. Also, ```if (ch == 'Y')``` statement occurs the problem. Therefore, the statement must add else statement to prevent the problem.
+To fix the bug, its source code must changed that it prevents the fall through problem about ```case 3```. Also, ```if (ch == 'Y')``` statement occurs the problem. Therefore, the statement must add else statement to prevent the problem.
 <br><br>
 
 ### 4.4. 112nd patch - T2F

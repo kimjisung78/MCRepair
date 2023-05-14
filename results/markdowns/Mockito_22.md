@@ -72,5 +72,5 @@ Three locations were inserted in front of Location 20.
 ```
 
 #### III. Explanation
-To fix the bug, the bug must changed that it returns ```true``` for comprison between bad equals. Therefore, the try-catch statement returns ```true``` for the comparison.
+To fix the bug, its source code must changed that it returns ```true``` for comprison between bad equals. The patch returns ```true``` for the comparison using its try-catch statement.
 <br><br>
