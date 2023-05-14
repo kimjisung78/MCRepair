@@ -77,7 +77,7 @@ A location was inserted in front of Location 682.
 ```
 
 #### Explanation
-To fix the bug, the bug must changed so that it prevents the fall through problem about ```case 3```.
+To fix the bug, the bug must changed that it prevents the fall through problem about ```case 3```.
 <br><br>
 
 ### 4.3. 98th patch - T2F

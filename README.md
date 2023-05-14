@@ -57,11 +57,11 @@ The difficulties are in the order of Type 3, Type 2, and Type 1. If an APR techn
     - T3F: A Type 3 bug that fixes chunks
 <br><br>
 
-## 3. Statstics of combined patches per evaluated result (172/1.2 K)
+## 3. Statstics of combined patches per evaluated result (171/1.2 K)
 ```powershell
-  |--- Total (172/1,223)
+  |--- Total (171/1,223)
   |------ Plausible: 1,223
-  |------ Correct: 172
+  |------ Correct: 171
 ```
 <br><br>
 
