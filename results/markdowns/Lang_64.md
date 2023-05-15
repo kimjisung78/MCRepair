@@ -53,7 +53,7 @@ src/java/org/apache/commons/lang/enums/ValuedEnum.java: 189-196
 * The number of used locations: 2 locations
 ```java
 src/java/org/apache/commons/lang/enums/ValuedEnum.java: 183
-return iValue - ((ValuedEnum) other).iValue;
+FAULT_OF_OMISSION
 ```
 
 ```java

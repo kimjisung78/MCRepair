@@ -108,7 +108,7 @@ final Object[] out = (Object[]) java.lang.reflect.Array.newInstance(singletons.g
 ```
 
 #### III. Explanation
-Its reason is the same as the reason in the 130th patch. In addition, ```sampleSize``` argument is always more than 2 in ```DiscreteDistribution.java```.
+Its reason is the same as the reason in the 130th patch.
 <br>
 
 ### 4.3. 328th patch - T1F
