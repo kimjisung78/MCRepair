@@ -1,7 +1,7 @@
 # Closure 46
 * <h4>Bug type: Type 3 (T2B / T2F, T3F)</h4>
 * <h4>The number of chunks: 2 chunks (1 used chunks / 1, 2, 3 fixed chunks)</h4>
-* <h4>The number of locations: 13 locations (13 used locations / 7, 8, 13 fixed locations)</h4>
+* <h4>The number of locations: 13 locations (13 used locations / 9, 10, 13 fixed locations)</h4>
 <br>
 
 ## 1. Developer's patch
@@ -76,15 +76,17 @@ src/com/google/javascript/jscomp/NameAnalyzer.java: 140-155
 
 #### II. Fixed chunks and locations
 * The number of fixed chunks: 2 chunks
-* The number of fixed locations: 7 locations
+* The number of fixed locations: 9 locations
 ```java
 src/com/google/javascript/jscomp/NameAnalyzer.java: 142
 Location 142 was deleted.
 ```
 
 ```java
-src/com/google/javascript/jscomp/NameAnalyzer.java: 144, 147-149 (Divided Locations), 150-151 (Divided Locations), 152-154
+src/com/google/javascript/jscomp/NameAnalyzer.java: 144-146, 147-149 (Divided Locations), 150-151 (Divided Locations), 152-154
 Location 144 was deleted.
+Location 145 was deleted.
+Location 146 was deleted.
 Locations 147, 148, and 149 were deleted.
 Locations 150 and 151 were deleted.
 Location 152 was deleted.
@@ -117,7 +119,7 @@ src/com/google/javascript/jscomp/NameAnalyzer.java: 140-155
 
 #### II. Fixed chunks and locations
 * The number of fixed chunks: 3 chunks
-* The number of fixed locations: 8 locations
+* The number of fixed locations: 10 locations
 ```java
 src/com/google/javascript/jscomp/NameAnalyzer.java: 140
 Location 140 was deleted.
@@ -129,8 +131,10 @@ Location 142 was deleted.
 ```
 
 ```java
-src/com/google/javascript/jscomp/NameAnalyzer.java: 144, 147-149 (Divided Locations), 150-151 (Divided Locations), 152-154
+src/com/google/javascript/jscomp/NameAnalyzer.java: 144-146, 147-149 (Divided Locations), 150-151 (Divided Locations), 152-154
 Location 144 was deleted.
+Location 145 was deleted.
+Location 146 was deleted.
 Locations 147, 148, and 149 were deleted.
 Locations 150 and 151 were deleted.
 Location 152 was deleted.
