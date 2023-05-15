@@ -48,7 +48,7 @@ src/java/org/apache/commons/lang/enums/ValuedEnum.java: 189-196
 ```
 <br>
 
-## 2. Used chunks and locations - T3F
+## 2. Used chunks and locations - T3B
 * The number of used chunks: 2 chunks
 * The number of used locations: 2 locations
 ```java
