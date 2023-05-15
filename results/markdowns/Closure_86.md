@@ -71,7 +71,7 @@ return false == true;
 ```false == true``` is false.
 <br><br>
 
-### 4.1. 148th patch - T2F
+### 4.3. 148th patch - T2F
 #### I. Fixed Result
 ```java
 src/com/google/javascript/jscomp/NodeUtil.java: 2464-2465
