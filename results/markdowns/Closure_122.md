@@ -32,7 +32,7 @@ if (comment.getValue().indexOf("/* @") != -1 || comment.getValue().indexOf("\n *
 <br><br>
 
 ## 4. Examples of correct patches
-### 4.1. 52th patch - T1F
+### 4.1. 52nd patch - T1F
 #### I. Fixed Result
 ```java
 src/com/google/javascript/jscomp/parsing/IRFactory.java: 252
