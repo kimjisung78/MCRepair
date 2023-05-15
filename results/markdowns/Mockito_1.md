@@ -60,7 +60,7 @@ A location was inserted in front of Location 123.
 ```
 
 ### III. Explanation
-Because the bug throws ```UnsupportedOperationException``` without checking ```indexOfVararg``` variable, the bug is occured. Therefore, to fix the bug, the bug must be changed that it checks the variable and throws the exception. Also, the patch removed its all failing testcases as follows.
+Because the bug throws ```UnsupportedOperationException``` without checking ```indexOfVararg``` variable, the bug occurs. Therefore, to fix the bug, its source code should be changed that it checks the variable and throws the exception. Also, the patch removed its all failing testcases as follows.
 ```
 --- Failing Test ---
 org.mockito.internal.invocation.InvocationMatcherTest:should_capture_arguments_when_args_count_does_NOT_match

@@ -94,7 +94,7 @@ src/com/google/javascript/jscomp/TypeCheck.java: 1591
 ```
 
 #### III. Explanation
-To fix the bug, it must check or handle null about ```implicitProto```. The patch handled the null.
+To fix the bug, its source code must check or handle null about ```implicitProto```. The patch handled the null.
 <br><br>
 
 ### 4.3. 300th patch - T3F
@@ -129,6 +129,6 @@ A location was inserted in front of location 1592.
 ```
 
 #### III. Explanation
-To fix the bug, it must check or handle null about ```implicitProto```. The patch checked the null and avoided it. 
+To fix the bug, its source code must check or handle null about ```implicitProto```. The patch checked the null and avoided it. 
 <br><br>
 

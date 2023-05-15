@@ -46,5 +46,5 @@ if (tree.getAttribute() instanceof Boolean) {
 ```
 
 #### III. Explanation
-To fix the bug, the bug must be changed that it checks that ```tree.getAttribute()``` can convert to ```Boolean``` class.
+To fix the bug, its source code must be changed that it checks that ```tree.getAttribute()``` can convert to ```Boolean``` class.
 <br><br>

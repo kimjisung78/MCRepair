@@ -77,7 +77,7 @@ final Object[] out = (Object[]) java.lang.reflect.Array.newInstance(singletons.g
 ```
 
 #### III. Explanation
-To fix the bug, the bug must be changed that it returns ```Object``` class value or its sub-class value.
+To fix the bug, its source code must be changed that it returns ```Object``` class value or its sub-class value.
 <br>
 
 ### 4.2. 136th patch - T3F
@@ -127,5 +127,5 @@ Location 190 was deleted.
 ```
 
 #### III. Explanation
-Because ```out``` variable is called in Location 190 after converting with Generic, the bug is occured. To fix the bug, Location 190 must be deleted.
+Because ```out``` variable is called in Location 190 after converting with Generic, the bug occurs. To fix the bug, Location 190 must be deleted.
 <br><br>
