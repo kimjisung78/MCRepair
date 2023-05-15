@@ -61,7 +61,7 @@ break;
 ```java
 src/com/google/javascript/jscomp/PeepholeOptimizationsPass.java: 175, 176-177 (Divided Locations)
 -   default:
--       break;
+-       throw new IllegalArgumentException("Node cannot be refined. \n" + node.toStringTree());
 ```
 
 #### II. Fixed chunks and locations
