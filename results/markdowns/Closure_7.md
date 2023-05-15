@@ -65,7 +65,7 @@ A location was inserted in front of location 614.
 ```
 
 #### III. Explanation
-To fix the bug, ```public JSType caseObjectType(ObjectType type)``` must be changed that it returns ```ctorType```, ```type```, or ```null```. The patch returns ```ctorType```, ```type```, or ```null```.
+To fix the bug, ```public JSType caseObjectType(ObjectType type)``` must be changed that it returns ```ctorType```, ```type```, or ```null```. The patch returned ```ctorType```, ```type```, or ```null```.
 <br><br>
 
 ### 4.2. 41st patch - T2F
