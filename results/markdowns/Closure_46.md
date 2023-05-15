@@ -47,10 +47,6 @@ public JSType getLeastSupertype(JSType that) {
     return builder.build();
 }
 ```
-
-```java
-src/com/google/javascript/jscomp/NameAnalyzer.java: 639
-```
 <br>
 
 ## 3. Correct combined patches per bug type
