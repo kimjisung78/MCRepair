@@ -45,7 +45,7 @@ return m.containsKey(value);
 <br><br>
 
 ## 4. Examples of correct patches
-### 4.1. 33rd patch - T2F
+### 4.1. 33rd patch - T1F
 #### I. Fixed Result
 ```java
 src/main/java/org/apache/commons/lang3/builder/ToStringStyle.java: 164
