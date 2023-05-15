@@ -92,7 +92,7 @@ Location 314 was deleted.
 Because ```boolean wasWhite``` variable is not called in its method, the varible is equivalent to its deletion.
 <br><br>
 
-### 4.2. 3rd patch - T3F
+### 4.2. 3rd patch - T2F
 #### I. Fixed Result
 ```java
 src/main/java/org/apache/commons/lang3/time/FastDateParser.java: 304-314
