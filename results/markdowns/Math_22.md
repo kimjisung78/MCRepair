@@ -29,12 +29,12 @@ src/main/java/org/apache/commons/math3/distribution/UniformRealDistribution.java
 * The number of used locations: 2 locations
 ```java
 src/main/java/org/apache/commons/math3/distribution/FDistribution.java: 275
-return true
+return true;
 ```
 
 ```java
 src/main/java/org/apache/commons/math3/distribution/UniformRealDistribution.java: 184
-return false
+return false;
 ```
 <br>
 
