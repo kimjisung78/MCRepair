@@ -28,7 +28,7 @@ src/com/google/javascript/rhino/jstype/RecordType.java: 140-155
 ```
 <br>
 
-## 2. Used chunks and locations - T2F
+## 2. Used chunks and locations - T2B
 * The number of used chunks: 1 chunk
 * The number of used locations: 13 locations
 ```java

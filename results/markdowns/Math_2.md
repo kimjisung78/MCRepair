@@ -49,7 +49,7 @@ return (double) sampleSize * getNumberOfSuccesses() / (double) getPopulationSize
 ```
 
 #### III. Explanation
-To fix the bug, its source code must be change that it converts ```getSampleSize()``` to double.
+To fix the bug, its source code must be changed that it converts ```getSampleSize()``` to double.
 <br><br>
 
 ### 4.2. 219th patch - T1F

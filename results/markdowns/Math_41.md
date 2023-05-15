@@ -31,7 +31,7 @@ for (int i = 0; i < weights.length; i++) {
 <br><br>
 
 ## 4. Examples of correct patches
-### 4.1. 52th patch - T1F
+### 4.1. 52nd patch - T1F
 #### I. Fixed Result
 ```java
 src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java: 520
