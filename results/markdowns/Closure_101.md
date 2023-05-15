@@ -42,7 +42,7 @@ FAULT_OF_OMISSION
 <br><br>
 
 ## 4. Examples of correct patches
-### 4.1. 12nd patch - T1F
+### 4.1. 12nd patch - T2F
 #### I. Fixed Result
 ```java
 src/com/google/javascript/jscomp/CommandLineRunner.java: 433-438
@@ -70,7 +70,7 @@ A location was inserted in front of Location 437.
 ```
 <br>
 
-### 4.2. 19th patch - T1F
+### 4.2. 19th patch - T2F
 #### I. Fixed Result
 ```java
 src/com/google/javascript/jscomp/CommandLineRunner.java: 433-438
