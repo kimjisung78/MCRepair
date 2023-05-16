@@ -55,12 +55,12 @@ src/com/google/javascript/jscomp/type/ChainableReverseAbstractInterpreter.java: 
 * The number of fixed chunks: 2 chunks
 * The number of fixed locations: 2 locations
 ```java
-src/com/google/javascript/jscomp/TypeCheck.java: 613
+src/com/google/javascript/jscomp/type/ChainableReverseAbstractInterpreter.java: 613
 A location was inserted in front of location 613.
 ```
 
 ```java
-src/com/google/javascript/jscomp/TypeCheck.java: 614
+src/com/google/javascript/jscomp/type/ChainableReverseAbstractInterpreter.java: 614
 A location was inserted in front of location 614.
 ```
 
@@ -81,7 +81,7 @@ src/com/google/javascript/jscomp/type/ChainableReverseAbstractInterpreter.java: 
 * The number of fixed chunks: 1 chunk
 * The number of fixed locations: 2 locations
 ```java
-src/com/google/javascript/jscomp/TypeCheck.java: 613
+src/com/google/javascript/jscomp/type/ChainableReverseAbstractInterpreter.java: 613
 if (resultEqualsValue && ctorType.isSubtype(type))
     return resultEqualsValue ? ctorType : null;
 ```
