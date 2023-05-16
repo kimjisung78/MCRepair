@@ -1,6 +1,6 @@
 # Closure 101
 * <h4>Bug type: Type 2 (T2B / T2F)</h4>
-* <h4>The number of chunks: 1 chunks (1 used chunks / 1 fixed chunk)</h4>
+* <h4>The number of chunks: 1 chunk (1 used chunks / 1 fixed chunk)</h4>
 * <h4>The number of locations: 4 locations (4 used locations / 4 fixed locations)</h4>
 <br>
 

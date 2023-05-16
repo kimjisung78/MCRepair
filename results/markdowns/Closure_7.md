@@ -1,6 +1,6 @@
 # Closure 7
 * <h4>Bug type: Type 3 (T1B / T2F, T3F)</h4>
-* <h4>The number of chunks: 2 chunks (1 used chunks / 1, 2 fixed chunks)</h4>
+* <h4>The number of chunks: 2 chunks (1 used chunk / 1, 2 fixed chunks)</h4>
 * <h4>The number of locations: 2 locations (1 used location / 2 fixed locations)</h4>
 <br>
 
