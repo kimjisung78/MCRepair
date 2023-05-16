@@ -39,7 +39,8 @@ throw new UnsupportedOperationException();
 <br>
 
 ## 3. Correct combined patches per bug type
-* T2F: 206, 366
+* T1F: 206
+* T2F: 366
 <br><br>
 
 ## 4. Examples of correct patches
