@@ -1,5 +1,5 @@
 # Mockito 1
-* <h4>Bug type: Type 2 (T1B / T2F)</h4>
+* <h4>Bug type: Type 2 (T1B / T1F, T2F)</h4>
 * <h4>The number of chunks: 1 chunk (1 used chunk / 1 fixed chunk)</h4>
 * <h4>The number of locations: 3 locations (1 used location / 1, 3 fixed locations)</h4>
 <br>
