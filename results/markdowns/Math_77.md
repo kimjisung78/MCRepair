@@ -14,7 +14,7 @@ src/main/java/org/apache/commons/math/linear/ArrayRealVector.java: 721
 ```
 
 ```java
-src/main/java/org/apache/commons/math/linear/ArrayRealVector.java: 498-506
+src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java: 498-506
 -   public double getLInfNorm() {
 -       double max = 0;
 -       Iterator iter = entries.iterator();
@@ -36,7 +36,7 @@ max += Math.max(max, Math.abs(a));
 ```
 
 ```java
-src/main/java/org/apache/commons/math/linear/ArrayRealVector.java: 498-506
+src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java: 498-506
 public double getLInfNorm() {
     double max = 0;
     Iterator iter = entries.iterator();
@@ -63,7 +63,7 @@ src/main/java/org/apache/commons/math/linear/ArrayRealVector.java: 721
 ```
 
 ```java
-src/main/java/org/apache/commons/math/linear/ArrayRealVector.java: 498
+src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java: 498
 -   public double getLInfNorm() {
 +   public double getLInfNormal() {
 ```
@@ -77,7 +77,7 @@ max = Math.max(max, Math.abs(a));
 ```
 
 ```java
-src/main/java/org/apache/commons/math/linear/ArrayRealVector.java: 498
+src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java: 498
 public double getLInfNormal() {
 ```
 
@@ -94,7 +94,7 @@ src/main/java/org/apache/commons/math/linear/ArrayRealVector.java: 721
 ```
 
 ```java
-src/main/java/org/apache/commons/math/linear/ArrayRealVector.java: 498
+src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java: 498
 -   public double getLInfNorm() {
 +   public double getLinfNorm() {
 ```
@@ -108,7 +108,7 @@ max = Math.max(max, Math.abs(a));
 ```
 
 ```java
-src/main/java/org/apache/commons/math/linear/ArrayRealVector.java: 498
+src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java: 498
 public double getLinfNorm() {
 ```
 

@@ -9,7 +9,7 @@
 * `+`: A fixed and added location
 ```java
 src/java/org/apache/commons/math/special/Gamma.java: 37
--   private static final double DEFAULT_EPSILON = 10e-9;            
+-   private static final double DEFAULT_EPSILON = 10e-9;
 +   private static final double DEFAULT_EPSILON = 10e-15;
 ```
 <br>
@@ -32,7 +32,7 @@ private static final double DEFAULT_EPSILON = 10e-9;
 #### I. Fixed Result
 ```java
 src/java/org/apache/commons/math/special/Gamma.java: 37
--   private static final double DEFAULT_EPSILON = 10e-9;            
+-   private static final double DEFAULT_EPSILON = 10e-9;
 +   private static final double DEFAULT_EPSILON = 10e-15;
 ```
 
@@ -49,7 +49,7 @@ private static final double DEFAULT_EPSILON = 10e-15;
 #### I. Fixed Result
 ```java
 src/java/org/apache/commons/math/special/Gamma.java: 37
--   private static final double DEFAULT_EPSILON = 10e-9;            
+-   private static final double DEFAULT_EPSILON = 10e-9;
 +   private static final double DEFAULT_EPSILON = 10e-18;
 ```
 

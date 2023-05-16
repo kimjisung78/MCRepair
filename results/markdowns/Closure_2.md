@@ -51,7 +51,7 @@ src/com/google/javascript/jscomp/TypeCheck.java: 1574
 * The number of fixed locations: 3 locations
 ```java
 src/com/google/javascript/jscomp/TypeCheck.java: 1574
-Three locations were inserted in front of location 1574.
+Three locations were inserted in front of Location 1574.
 ```
 
 #### III. Explanation
@@ -82,7 +82,7 @@ src/com/google/javascript/jscomp/TypeCheck.java: 1588-1591
 * The number of fixed locations: 4 locations
 ```java
 src/com/google/javascript/jscomp/TypeCheck.java: 1574
-A location was inserted in front of location 1574.
+A location was inserted in front of Location 1574.
 ```
 
 ```java
@@ -120,12 +120,12 @@ src/com/google/javascript/jscomp/TypeCheck.java: 1588-1592
 * The number of fixed locations: 2 locations
 ```java
 src/com/google/javascript/jscomp/TypeCheck.java: 1574
-A location was inserted in front of location 1574.
+A location was inserted in front of Location 1574.
 ```
 
 ```java
 src/com/google/javascript/jscomp/TypeCheck.java: 1592
-A location was inserted in front of location 1592.
+A location was inserted in front of Location 1592.
 ```
 
 #### III. Explanation

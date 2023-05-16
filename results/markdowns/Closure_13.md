@@ -68,12 +68,12 @@ Location 126 was deleted.
 
 ```java
 src/com/google/javascript/jscomp/PeepholeOptimizationsPass.java: 128
-A location was inserted in front of location 128.
+A location was inserted in front of Location 128.
 ```
 
 ```java
 src/com/google/javascript/jscomp/PeepholeOptimizationsPass.java: 138
-A location was inserted in front of location 138.
+A location was inserted in front of Location 138.
 ```
 
 #### III. Explanation
@@ -103,6 +103,6 @@ Location 126 was deleted.
 
 ```java
 src/com/google/javascript/jscomp/PeepholeOptimizationsPass.java: 128
-A location was inserted in front of location 128.
+A location was inserted in front of Location 128.
 ```
 <br><br>

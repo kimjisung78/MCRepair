@@ -56,12 +56,12 @@ src/com/google/javascript/jscomp/type/ChainableReverseAbstractInterpreter.java: 
 * The number of fixed locations: 2 locations
 ```java
 src/com/google/javascript/jscomp/type/ChainableReverseAbstractInterpreter.java: 613
-A location was inserted in front of location 613.
+A location was inserted in front of Location 613.
 ```
 
 ```java
 src/com/google/javascript/jscomp/type/ChainableReverseAbstractInterpreter.java: 614
-A location was inserted in front of location 614.
+A location was inserted in front of Location 614.
 ```
 
 #### III. Explanation
