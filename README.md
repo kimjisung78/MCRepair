@@ -4,7 +4,7 @@ If you want to use this project, please cite our paper published at SAC'23. In a
 @inproceedings{MCRepair-2023,
     title = "MCRepair: Multi-Chunk Program Repair via Patch Optimization with Buggy Block",
     author = "Jisung Kim and Byungjeong Lee",
-    booktitle = "PROCEEDINGS OF THE 2023 ACM SYMPOSIUM ON APPLIED COMPUTING (SAC 2023)",
+    booktitle = "PROCEEDINGS OF THE 38th ACM SYMPOSIUM ON APPLIED COMPUTING (SAC 2023)",
     year = "2023",
     doi = "https://doi.org/10.1145/3555776.3577762",
     pages = "1508--1515",
