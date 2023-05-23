@@ -124,7 +124,7 @@ org.mockitousage.verification.VerificationInOrderMixedWithOrdiraryVerificationTe
 ```java
 src/org/mockito/internal/invocation/InvocationMatcher.java: 123
 -   throw new UnsupportedOperationException();
-+   if (indexOfVararg == - 1) {
++   if (indexOfVararg == -1) {
 +       return; 
 +   }
 ```
@@ -134,7 +134,7 @@ src/org/mockito/internal/invocation/InvocationMatcher.java: 123
 * The number of fixed locations: 3 locations
 ```java
 src/org/mockito/internal/invocation/InvocationMatcher.java: 123
-if (indexOfVararg == - 1) {
+if (indexOfVararg == -1) {
     return; 
 }
 ```
