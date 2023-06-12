@@ -1,13 +1,13 @@
 # MCRepair
-If you want to use this project, please cite our paper published at SAC'23. In addition, my presentation file is in [the following link.](./ppts/ACM_SAC2023_Presentation_20230328.pdf) When you have a question, please write an issue on the github url.
+If you want to use this project, please cite our paper published at SAC'23. In addition, when you have a question, please write an issue on this github url.
 ```
 @inproceedings{MCRepair-2023,
     title = "MCRepair: Multi-Chunk Program Repair via Patch Optimization with Buggy Block",
     author = "Jisung Kim and Byungjeong Lee",
-    booktitle = "PROCEEDINGS OF THE 2023 ACM SYMPOSIUM ON APPLIED COMPUTING (SAC 2023)",
+    booktitle = "Proceedings of the 38th ACM/SIGAPP Symposium on Applied Computing (SAC 2023)",
     year = "2023",
     doi = "https://doi.org/10.1145/3555776.3577762",
-    pages = "1508--1515",
+    pages = "1508-1515",
 }
 ```
 
@@ -29,8 +29,9 @@ If you want to use this project, please cite our paper published at SAC'23. In a
 ## Change Logs
 |Date|Title|Descrition|
 |---|---|---|
-|2023-03-28|ACM SAC 2023 (Software Engineering Track)|Uploaded the MCRepair's PPT file.|
-|2023-05-13|Evaluated Results|Updated the MCRepair's results for combined patches and repaired bugs.|
+|2023-03-28|ACM SAC 2023 (Software Engineering Track)|[The MCRepair's PPT file](./ppts/ACM_SAC2023_Presentation_20230328.pdf) was uploaded.|
+|2023-05-13|Evaluated Results|The MCRepair's results for combined patches and repaired bugs were updated.|
+|2023-06-07|ACM Digital Library|[The MCRepair's paper](https://dl.acm.org/doi/10.1145/3555776.3577762) was published.|
 
 <br>
 
