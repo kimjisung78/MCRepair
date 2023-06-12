@@ -1,6 +1,6 @@
 # Closure 46
 * <h4>Bug type: Type 3 (T2B / T2F, T3F)</h4>
-* <h4>The number of chunks: 3 chunks (1 used chunks / 1, 2, 3 fixed chunks)</h4>
+* <h4>The number of chunks: 3 chunks (1 used chunk / 1, 2, 3 fixed chunks)</h4>
 * <h4>The number of locations: 13 locations (13 used locations / 9, 10, 13 fixed locations)</h4>
 <br>
 
@@ -58,7 +58,7 @@ public JSType getLeastSupertype(JSType that) {
 ### 4.1. 402nd patch - T3F
 #### I. Fixed Result
 ```java
-src/com/google/javascript/jscomp/NameAnalyzer.java: 140-155
+src/com/google/javascript/rhino/jstype/RecordType.java: 140-155
     @Override
     public JSType getLeastSupertype(JSType that) {
 -       if (!that.isRecordType()) {
@@ -78,12 +78,12 @@ src/com/google/javascript/jscomp/NameAnalyzer.java: 140-155
 * The number of fixed chunks: 2 chunks
 * The number of fixed locations: 9 locations
 ```java
-src/com/google/javascript/jscomp/NameAnalyzer.java: 142
+src/com/google/javascript/rhino/jstype/RecordType.java: 142
 Location 142 was deleted.
 ```
 
 ```java
-src/com/google/javascript/jscomp/NameAnalyzer.java: 144-146, 147-149 (Divided Locations), 150-151 (Divided Locations), 152-154
+src/com/google/javascript/rhino/jstype/RecordType.java: 144-146, 147-149 (Divided Locations), 150-151 (Divided Locations), 152-154
 Location 144 was deleted.
 Location 145 was deleted.
 Location 146 was deleted.
@@ -101,7 +101,7 @@ To only return ```super.getLeastSupertype(that)``` in ```public JSType getLeastS
 ### 4.2. 403rd patch - T3F
 #### I. Fixed Result
 ```java
-src/com/google/javascript/jscomp/NameAnalyzer.java: 140-155
+src/com/google/javascript/rhino/jstype/RecordType.java: 140-155
 -   @Override
     public JSType getLeastSupertype(JSType that) {
 -       if (!that.isRecordType()) {
@@ -121,17 +121,17 @@ src/com/google/javascript/jscomp/NameAnalyzer.java: 140-155
 * The number of fixed chunks: 3 chunks
 * The number of fixed locations: 10 locations
 ```java
-src/com/google/javascript/jscomp/NameAnalyzer.java: 140
+src/com/google/javascript/rhino/jstype/RecordType.java: 140
 Location 140 was deleted.
 ```
 
 ```java
-src/com/google/javascript/jscomp/NameAnalyzer.java: 142
+src/com/google/javascript/rhino/jstype/RecordType.java: 142
 Location 142 was deleted.
 ```
 
 ```java
-src/com/google/javascript/jscomp/NameAnalyzer.java: 144-146, 147-149 (Divided Locations), 150-151 (Divided Locations), 152-154
+src/com/google/javascript/rhino/jstype/RecordType.java: 144-146, 147-149 (Divided Locations), 150-151 (Divided Locations), 152-154
 Location 144 was deleted.
 Location 145 was deleted.
 Location 146 was deleted.
@@ -149,7 +149,7 @@ Its reason is the same as the reason in the 402nd patch.
 ### 4.3. 423rd patch - T2F
 #### I. Fixed Result
 ```java
-src/com/google/javascript/jscomp/NameAnalyzer.java: 140-155
+src/com/google/javascript/rhino/jstype/RecordType.java: 140-155
 -   @Override
 -   public JSType getLeastSupertype(JSType that) {
 -       if (!that.isRecordType()) {
@@ -169,7 +169,7 @@ src/com/google/javascript/jscomp/NameAnalyzer.java: 140-155
 * The number of fixed chunks: 1 chunk
 * The number of fixed locations: 13 locations
 ```java
-src/com/google/javascript/jscomp/NameAnalyzer.java: 140-146, 147-149 (Divided Locations), 150-151 (Divided Locations), 152-155
+src/com/google/javascript/rhino/jstype/RecordType.java: 140-146, 147-149 (Divided Locations), 150-151 (Divided Locations), 152-155
 Location 140 was deleted.
 Location 141 was deleted.
 Location 142 was deleted.

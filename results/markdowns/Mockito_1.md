@@ -1,5 +1,5 @@
 # Mockito 1
-* <h4>Bug type: Type 2 (T1B / T2F)</h4>
+* <h4>Bug type: Type 2 (T1B / T1F, T2F)</h4>
 * <h4>The number of chunks: 1 chunk (1 used chunk / 1 fixed chunk)</h4>
 * <h4>The number of locations: 3 locations (1 used location / 1, 3 fixed locations)</h4>
 <br>
@@ -39,7 +39,8 @@ throw new UnsupportedOperationException();
 <br>
 
 ## 3. Correct combined patches per bug type
-* T2F: 206, 366
+* T1F: 206
+* T2F: 366
 <br><br>
 
 ## 4. Examples of correct patches
@@ -60,7 +61,7 @@ A location was inserted in front of Location 123.
 ```
 
 ### III. Explanation
-Because the bug throws ```UnsupportedOperationException``` without checking ```indexOfVararg``` variable, the bug occurs. Therefore, to fix the bug, its source code should be changed that it checks the variable and throws the exception. Also, the patch removed its all failing testcases as follows.
+Because the bug throws ```UnsupportedOperationException``` without checking ```indexOfVararg``` variable, the bug occurs. Therefore, to fix the bug, its source code should be changed that it returns or checks the variable and then throws the exception. Also, the patch removed its all failing testcases as follows.
 ```
 --- Failing Test ---
 org.mockito.internal.invocation.InvocationMatcherTest:should_capture_arguments_when_args_count_does_NOT_match
@@ -123,7 +124,7 @@ org.mockitousage.verification.VerificationInOrderMixedWithOrdiraryVerificationTe
 ```java
 src/org/mockito/internal/invocation/InvocationMatcher.java: 123
 -   throw new UnsupportedOperationException();
-+   if (indexOfVararg == - 1) {
++   if (indexOfVararg == -1) {
 +       return; 
 +   }
 ```
@@ -133,7 +134,7 @@ src/org/mockito/internal/invocation/InvocationMatcher.java: 123
 * The number of fixed locations: 3 locations
 ```java
 src/org/mockito/internal/invocation/InvocationMatcher.java: 123
-if (indexOfVararg == - 1) {
+if (indexOfVararg == -1) {
     return; 
 }
 ```

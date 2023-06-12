@@ -1,6 +1,6 @@
 # Closure 7
 * <h4>Bug type: Type 3 (T1B / T2F, T3F)</h4>
-* <h4>The number of chunks: 2 chunks (1 used chunks / 1, 2 fixed chunks)</h4>
+* <h4>The number of chunks: 2 chunks (1 used chunk / 1, 2 fixed chunks)</h4>
 * <h4>The number of locations: 2 locations (1 used location / 2 fixed locations)</h4>
 <br>
 
@@ -55,13 +55,13 @@ src/com/google/javascript/jscomp/type/ChainableReverseAbstractInterpreter.java: 
 * The number of fixed chunks: 2 chunks
 * The number of fixed locations: 2 locations
 ```java
-src/com/google/javascript/jscomp/TypeCheck.java: 613
-A location was inserted in front of location 613.
+src/com/google/javascript/jscomp/type/ChainableReverseAbstractInterpreter.java: 613
+A location was inserted in front of Location 613.
 ```
 
 ```java
-src/com/google/javascript/jscomp/TypeCheck.java: 614
-A location was inserted in front of location 614.
+src/com/google/javascript/jscomp/type/ChainableReverseAbstractInterpreter.java: 614
+A location was inserted in front of Location 614.
 ```
 
 #### III. Explanation
@@ -81,7 +81,7 @@ src/com/google/javascript/jscomp/type/ChainableReverseAbstractInterpreter.java: 
 * The number of fixed chunks: 1 chunk
 * The number of fixed locations: 2 locations
 ```java
-src/com/google/javascript/jscomp/TypeCheck.java: 613
+src/com/google/javascript/jscomp/type/ChainableReverseAbstractInterpreter.java: 613
 if (resultEqualsValue && ctorType.isSubtype(type))
     return resultEqualsValue ? ctorType : null;
 ```

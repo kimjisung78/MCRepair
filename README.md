@@ -184,14 +184,14 @@ The difficulties are in the order of Type 3, Type 2, and Type 1. If an APR techn
   |--------- Lang (6)      : [L_6, 29, 43, 51, 57, 59]
   |--------- Math (16)     : [M_2, 5, 27, 30, 32, 34, 41, 57, 58, 63, 70, 75, 80, 82, 85, 104]
   |--------- Mockito (3)   : [MC_1, 5, 29]
-  |--------- Time (2)      : [T_7, 19]
+  |--------- Time (2)      : [T_4, 19]
   |------ 2 chunks (18)
   |--------- Chart (1)     : [C_1]
   |--------- Closure (5)   : [CL_2, 7, 11, 40, 115]
   |--------- Lang (3)      : [L_10, 34, 64]
   |--------- Math (7)      : [M_8, 22, 46, 72, 77, 79, 98]
-  |--------- Time (1)      : [T_17]
   |--------- Mockito (1)   : [MC_22]
+  |--------- Time (1)      : [T_17]
   |------ 3 chunks (3)
   |--------- Closure (3)   : [CL_13, 46, 102]
   |------ 4 chunks (1)
@@ -208,14 +208,14 @@ The difficulties are in the order of Type 3, Type 2, and Type 1. If an APR techn
   |--------- Lang (5)      : [L_6, 29, 43, 57, 59]
   |--------- Math (15)     : [M_2, 5, 27, 30, 32, 34, 41, 57, 58, 70, 75, 80, 82, 85, 104]
   |--------- Mockito (2)   : [MC_5, 29]
-  |--------- Time (2)      : [T_7, 19]
+  |--------- Time (2)      : [T_4, 19]
   |------ 2 locations (12)
   |--------- Chart (1)     : [C_1]
   |--------- Closure (3)   : [CL_7, 19, 107]
   |--------- Lang (2)      : [L_34, 64]
   |--------- Math (6)      : [M_8, 22, 46, 72, 79, 98]
   |------ 3 locations (7)
-  |--------- Closure (5)   : [CL_11, 13, 40, 86, 02]
+  |--------- Closure (5)   : [CL_11, 13, 40, 86, 102]
   |--------- Lang (1)      : [L_51]
   |--------- Mockito (1)   : [MC_1]
   |------ 4 locations (3)
@@ -223,13 +223,13 @@ The difficulties are in the order of Type 3, Type 2, and Type 1. If an APR techn
   |--------- Math (1)      : [M_18]
   |------ 5 locations (3)
   |--------- Math (1)      : [M_63]
-  |--------- Time (1)      : [T_17]
   |--------- Mockito (1)   : [MC_22]
+  |--------- Time (1)      : [T_17]
   |------ 9 locations (1)
   |--------- Lang (1)      : [L_10]
   |------ 10 locations
   |--------- Math (1)      : [M_77]
-  |------ 11 locations
+  |------ 11 locations (1)
   |--------- Closure (1)   : [CL_115]
   |------ 13 locations
   |--------- Closure (1)   : [CL_46]

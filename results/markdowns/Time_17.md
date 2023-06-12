@@ -61,7 +61,7 @@ return convertLocalToUTC(local, false, earlierOrLater ? instantAfter : instantBe
 <br>
 
 ## 3. Correct combined patches per bug type
-* T1F: 52, 100
+* T2F: 52, 100
 <br><br>
 
 ## 4. Examples of correct patches

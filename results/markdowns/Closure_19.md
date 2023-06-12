@@ -1,6 +1,6 @@
 # Closure 19
 * <h4>Bug type: Type 2 (T1B / T1F, T2F)</h4>
-* <h4>The number of chunks: 1 chunks (1 used chunk / 1 fixed chunk)</h4>
+* <h4>The number of chunks: 1 chunk (1 used chunk / 1 fixed chunk)</h4>
 * <h4>The number of locations: 2 locations (1 used location / 1, 2 fixed locations)</h4>
 <br>
 
@@ -38,7 +38,7 @@ FAULT_OF_OMISSION
 ### 4.1. 411st patch - T1F
 #### I. Fixed Result
 ```java
-src/com/google/javascript/jscomp/PeepholeOptimizationsPass.java: 175, 176-177 (Divided Locations)
+src/com/google/javascript/jscomp/type/ChainableReverseAbstractInterpreter.java: 175, 176-177 (Divided Locations)
     default:
 +       throw new IllegalArgumentException("Node cannot be refined. \n" + node.toStringTree());
 -       break;
@@ -48,7 +48,7 @@ src/com/google/javascript/jscomp/PeepholeOptimizationsPass.java: 175, 176-177 (D
 * The number of fixed chunks: 1 chunk
 * The number of fixed locations: 1 location
 ```java
-src/com/google/javascript/jscomp/PeepholeOptimizationsPass.java: 176-177 (Divided Locations)
+src/com/google/javascript/jscomp/type/ChainableReverseAbstractInterpreter.java: 176-177 (Divided Locations)
 break;
 ```
 
@@ -59,7 +59,7 @@ break;
 ### 4.2. 412nd patch - T2F
 #### I. Fixed Result
 ```java
-src/com/google/javascript/jscomp/PeepholeOptimizationsPass.java: 175, 176-177 (Divided Locations)
+src/com/google/javascript/jscomp/type/ChainableReverseAbstractInterpreter.java: 175, 176-177 (Divided Locations)
 -   default:
 -       throw new IllegalArgumentException("Node cannot be refined. \n" + node.toStringTree());
 ```
@@ -68,7 +68,7 @@ src/com/google/javascript/jscomp/PeepholeOptimizationsPass.java: 175, 176-177 (D
 * The number of fixed chunks: 1 chunk
 * The number of fixed locations: 2 locations
 ```java
-src/com/google/javascript/jscomp/PeepholeOptimizationsPass.java: 175, 176-177 (Divided Locations)
+src/com/google/javascript/jscomp/type/ChainableReverseAbstractInterpreter.java: 175, 176-177 (Divided Locations)
 Location 175 was deleted.
 Divided Locations 176 and 177 were deleted.
 ```

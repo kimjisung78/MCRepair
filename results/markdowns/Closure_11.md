@@ -58,7 +58,7 @@ Location 1315 was deleted.
 
 ```java
 src/com/google/javascript/jscomp/TypeCheck.java: 1321
-A location was inserted in front of location 1321.
+A location was inserted in front of Location 1321.
 ```
 
 #### III. Explanation

@@ -44,7 +44,7 @@ src/com/google/javascript/jscomp/LightweightMessageFormatter.java: 97-98 (Divide
 * The number of fixed chunks: 1 chunk
 * The number of fixed locations: 1 location
 ```java
-src/com/google/javascript/jscomp/ClosureCodingConvention.java: 97-98 (Divided Locations)
+src/com/google/javascript/jscomp/LightweightMessageFormatter.java: 97-98 (Divided Locations)
 if (excerpt.equals(LINE) && 0 <= charno && charno <= sourceExcerpt.length()) {
 ```
 <br><br>

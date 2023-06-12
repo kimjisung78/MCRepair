@@ -48,6 +48,6 @@ description.appendText(String.valueOf(wanted));
 ```String.valueOf(wanted)``` is equivalent to ```wanted == null ? "null" : wanted.toString()``` as follows.
 ```java
 System.out.println(String.valueOf(null)); // "null"
-System.out.println(String.valueOf("346")); // "346"
+System.out.println(String.valueOf(346)); // "346"
 ```
 <br><br>
