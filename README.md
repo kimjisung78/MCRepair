@@ -11,7 +11,7 @@ If you want to use this project, please cite our paper published at SAC'23. In a
 }
 ```
 
-* An Automated Program Repair (APR) technique that applied a buggy block, patch optimization, and CodeBERT to target complex multi-chunk bugs.
+* An automated program repair (APR) technique that applied a buggy block, patch optimization, and CodeBERT to target complex multi-chunk bugs.
   * Buggy block: A novel method that binds buggy chunks into a multi-buggy chunk and preprocesses the chunk with its buggy contexts for patch space reduction and dependency problems.
   * Patch optimization: A novel strategy that effectively combines the generated candidate patches with patch space reduction.
   * CodeBERT: A BERT for source code datasets to address the lack of datasets and out-of-vocabulary problems. 
