@@ -32,6 +32,7 @@ If you want to use this project, please cite our paper published at SAC'23. In a
 |2023-03-28|ACM SAC 2023 (Software Engineering Track)|[The MCRepair's PPT file](./ppts/ACM_SAC2023_Presentation_20230328.pdf) was uploaded.|
 |2023-05-13|Evaluated Results|The MCRepair's results for combined patches and repaired bugs were updated.|
 |2023-06-07|ACM Digital Library|[The MCRepair's paper](https://dl.acm.org/doi/10.1145/3555776.3577762) was published.|
+|2023-09-05|Evaluated Results|The MCRepair's results for combined patches were updated due to Mockito-22.|
 
 <br>
 
@@ -58,11 +59,11 @@ The difficulties are in the order of Type 3, Type 2, and Type 1. If an APR techn
     - T3F: A Type 3 bug that fixes chunks
 <br><br>
 
-## 3. Statstics of combined patches per evaluated result (172/1.2 K)
+## 3. Statstics of combined patches per evaluated result (171/1.2 K)
 ```powershell
-  |--- Total (172/1,223)
+  |--- Total (171/1,223)
   |------ Plausible: 1,223
-  |------ Correct: 172
+  |------ Correct: 171
 ```
 <br><br>
 
