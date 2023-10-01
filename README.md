@@ -33,6 +33,7 @@ If you want to use this project, please cite our paper published at SAC'23. In a
 |2023-05-13|Evaluated Results|The MCRepair's results for combined patches and repaired bugs were updated.|
 |2023-06-07|ACM Digital Library|[The MCRepair's paper](https://dl.acm.org/doi/10.1145/3555776.3577762) was published.|
 |2023-09-05|Evaluated Results|The MCRepair's results for combined patches were updated due to Mockito-22.|
+|2023-10-02|Figures|[The MCRepair's drawio file](./figures/ACM_SAC2023_Figures_20221230.drawio) for Figures 1-4 was uploaded.|
 
 <br>
 
