@@ -34,6 +34,7 @@ If you want to use this project, please cite our paper published at SAC'23. In a
 |2023-06-07|ACM Digital Library|[The MCRepair's paper](https://dl.acm.org/doi/10.1145/3555776.3577762) was published.|
 |2023-09-05|Evaluated Results|The MCRepair's results for combined patches were updated due to Mockito-22.|
 |2023-10-02|Figures|[The MCRepair's drawio file](./figures/ACM_SAC2023_Figures_20221230.drawio) for Figures 1-4 was uploaded.|
+|2023-10-05|Evaluated Results|The MCRepair's results for combined patches and repaired bugs were updated due to Mockito-22 and Math-18. In addition, [The MCRepair's manuscript]() was uploaded for revision.|
 
 <br>
 
@@ -60,17 +61,17 @@ The difficulties are in the order of Type 3, Type 2, and Type 1. If an APR techn
     - T3F: A Type 3 bug that fixes chunks
 <br><br>
 
-## 3. Statstics of combined patches per evaluated result (171/1.2 K)
+## 3. Statstics of combined patches per evaluated result (170/1.2 K)
 ```powershell
-  |--- Total (171/1,223)
+  |--- Total (170/1,223)
   |------ Plausible: 1,223
-  |------ Correct: 171
+  |------ Correct: 170
 ```
 <br><br>
 
-## 4. Statstics of repaired bugs per evaluated result (66/75)
+## 4. Statstics of repaired bugs per evaluated result (65/75)
 ```powershell
-  |--- Total (66/75)
+  |--- Total (65/75)
   |------ Chart (5/6)
   |--------- Plausible (1) : [C_24]
   |--------- Correct (5)   : [C_1, 8, 9, 11, 20]
@@ -79,9 +80,9 @@ The difficulties are in the order of Type 3, Type 2, and Type 1. If an APR techn
   |------ Lang (9/10)
   |--------- Plausible (1) : [L_55]
   |--------- Correct (9)   : [L_6, 10, 29, 34, 43, 51, 57, 59, 64]
-  |------ Math (24/30)
-  |--------- Plausible (6) : [M_33, 62, 73, 84, 95, 96]
-  |--------- Correct (24)  : [M_2, 5, 8, 18, 22, 27, 30, 32, 34, 41, 46, 57, 58, 63, 70, 72, 75, 77, 79, 80, 82, 85, 98, 104]
+  |------ Math (23/30)
+  |--------- Plausible (7) : [M_18, 33, 62, 73, 84, 95, 96]
+  |--------- Correct (23)  : [M_2, 5, 8, 22, 27, 30, 32, 34, 41, 46, 57, 58, 63, 70, 72, 75, 77, 79, 80, 82, 85, 98, 104]
   |------ Mockito (4/4) 
   |--------- Correct (4)   : [MC_1, 5, 22, 29]
   |------ Time (3/4)
@@ -90,7 +91,7 @@ The difficulties are in the order of Type 3, Type 2, and Type 1. If an APR techn
 ```
 <br><br>
 
-## 5. Details of correctly repaired bugs (66)
+## 5. Details of correctly repaired bugs (65)
 * Chart (5)
   * [C_1](./results/markdowns/Chart_1.md), [C_8](./results/markdowns/Chart_8.md), [C_9](./results/markdowns/Chart_9.md)
   * [C_11](./results/markdowns/Chart_11.md)
@@ -116,9 +117,8 @@ The difficulties are in the order of Type 3, Type 2, and Type 1. If an APR techn
   * [L_43](./results/markdowns/Lang_43.md)
   * [L_51](./results/markdowns/Lang_51.md), [L_57](./results/markdowns/Lang_57.md), [L_59](./results/markdowns/Lang_59.md)
   * [L_64](./results/markdowns/Lang_64.md)
-* Math (24)
+* Math (23)
   * [M_2](./results/markdowns/Math_2.md), [M_5](./results/markdowns/Math_5.md), [M_8](./results/markdowns/Math_8.md)
-  * [M_18](./results/markdowns/Math_18.md)
   * [M_22](./results/markdowns/Math_22.md), [M_27](./results/markdowns/Math_27.md)
   * [M_30](./results/markdowns/Math_30.md), [M_32](./results/markdowns/Math_32.md), [M_34](./results/markdowns/Math_34.md)
   * [M_41](./results/markdowns/Math_41.md), [M_46](./results/markdowns/Math_46.md)
@@ -136,22 +136,22 @@ The difficulties are in the order of Type 3, Type 2, and Type 1. If an APR techn
   * [T_17](./results/markdowns/Time_17.md), [T_19](./results/markdowns/Time_19.md)
 <br><br>
 
-## 6. Statstics of correctly repaired bugs (66)
-### 6.1. Statstics of correctly repaired bugs (66)
+## 6. Statstics of correctly repaired bugs (65)
+### 6.1. Statstics of correctly repaired bugs (65)
 ```powershell
-  |--- Total (66)
+  |--- Total (65)
   |------ Chart (5)    : [C_1, 8, 9, 11, 20]
   |------ Closure (21) : [CL_2, 7, 10, 11, 13, 19, 38, 40, 46, 57, 62, 70, 86, 92, 101, 102, 107, 109, 115, 122, 125]
   |------ Lang (9)     : [L_6, 10, 29, 34, 43, 51, 57, 59, 64]
-  |------ Math (24)    : [M_2, 5, 8, 18, 22, 27, 30, 32, 34, 41, 46, 57, 58, 63, 70, 72, 75, 77, 79, 80, 82, 85, 98, 104]
+  |------ Math (23)    : [M_2, 5, 8, 22, 27, 30, 32, 34, 41, 46, 57, 58, 63, 70, 72, 75, 77, 79, 80, 82, 85, 98, 104]
   |------ Mockito (4)  : [MC_1, 5, 22, 29]
   |------ Time (3)     : [T_4, 17, 19]
 ```
 <br>
 
-### 6.2. Statstics of correctly repaired bugs per bug type (66)
+### 6.2. Statstics of correctly repaired bugs per bug type (65)
 ```powershell
-  |--- Total (66)
+  |--- Total (65)
   |------ Chart (5)
   |--------- Type 1 (4)    : [C_8, 9, 11, 20]
   |--------- Type 3 (1)    : [C_1]
@@ -163,10 +163,10 @@ The difficulties are in the order of Type 3, Type 2, and Type 1. If an APR techn
   |--------- Type 1 (5)    : [L_6, 29, 43, 57, 59]
   |--------- Type 2 (1)    : [L_51]
   |--------- Type 3 (3)    : [L_10, 34, 64]
-  |------ Math (24)
+  |------ Math (23)
   |--------- Type 1 (15)   : [M_2, 5, 27, 30, 32, 34, 41, 57, 58, 70, 75, 80, 82, 85, 104]
   |--------- Type 2 (1)    : [M_63]
-  |--------- Type 3 (8)    : [M_8, 18, 22, 46, 72, 77, 79, 98]
+  |--------- Type 3 (7)    : [M_8, 22, 46, 72, 77, 79, 98]
   |------ Mockito (4)
   |--------- Type 1 (2)    : [MC_5, 29]
   |--------- Type 2 (1)    : [MC_1]
@@ -177,9 +177,9 @@ The difficulties are in the order of Type 3, Type 2, and Type 1. If an APR techn
 ```
 <br>
 
-### 6.3. Statstics of correctly repaired bugs per chunk (66)
+### 6.3. Statstics of correctly repaired bugs per chunk (65)
 ```powershell
-  |--- Total (66)
+  |--- Total (65)
   |------ 1 chunk (44)
   |--------- Chart (4)     : [C_8, 9, 11, 20]
   |--------- Closure (13)  : [CL_10, 19, 38, 57, 62, 70, 86, 92, 101, 107, 109, 122, 125]
@@ -196,14 +196,12 @@ The difficulties are in the order of Type 3, Type 2, and Type 1. If an APR techn
   |--------- Time (1)      : [T_17]
   |------ 3 chunks (3)
   |--------- Closure (3)   : [CL_13, 46, 102]
-  |------ 4 chunks (1)
-  |--------- Math (1)      : [M_18]
 ```
 <br>
 
-### 6.4. Statstics of correctly repaired bugs per location (66)
+### 6.4. Statstics of correctly repaired bugs per location (65)
 ```powershell
-  |--- Total (66)
+  |--- Total (65)
   |------ 1 location (37)
   |--------- Chart (4)     : [C_8, 9, 11, 20]
   |--------- Closure (9)   : [CL_10, 38, 57, 62, 70, 92, 109, 122, 125]
@@ -220,9 +218,8 @@ The difficulties are in the order of Type 3, Type 2, and Type 1. If an APR techn
   |--------- Closure (5)   : [CL_11, 13, 40, 86, 102]
   |--------- Lang (1)      : [L_51]
   |--------- Mockito (1)   : [MC_1]
-  |------ 4 locations (3)
+  |------ 4 locations (2)
   |--------- Closure (2)   : [CL_2, 101]
-  |--------- Math (1)      : [M_18]
   |------ 5 locations (3)
   |--------- Math (1)      : [M_63]
   |--------- Mockito (1)   : [MC_22]
@@ -237,3 +234,9 @@ The difficulties are in the order of Type 3, Type 2, and Type 1. If an APR techn
   |--------- Closure (1)   : [CL_46]
 ```
 <br><br>
+
+## 7. Details of plausibly repaired bugs after evaluating the patch correctness again (2)
+* Math (1)
+  * [M_18](./results/markdowns/Math_18.md)
+* Mockito (1)
+  * [MC_22](./results/markdowns/Mockito_22.md)
