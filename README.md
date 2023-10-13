@@ -34,7 +34,8 @@ If you want to use this project, please cite our paper published at SAC'23. In a
 |2023-06-07|ACM Digital Library|[The MCRepair's paper](https://dl.acm.org/doi/10.1145/3555776.3577762) was published.|
 |2023-09-05|Evaluated Results|The MCRepair's results for combined patches were updated due to Mockito-22.|
 |2023-10-02|Figures|[The MCRepair's drawio file](./figures/ACM_SAC2023_Figures_20221230.drawio) for Figures 1-4 was uploaded.|
-|2023-10-05|Evaluated Results|The MCRepair's results for combined patches and repaired bugs were updated due to Mockito-22 and Math-18. In addition, [The MCRepair's manuscript]() was uploaded for revision.|
+|2023-10-05|Evaluated Results|The MCRepair's results for combined patches and repaired bugs were updated due to Mockito-22 and Math-18.|
+|2023-10-05 ~ 2023-10-12|Arxiv|[The MCRepair's manuscript](https://doi.org/10.48550/arXiv.2310.08157) was released after revision.|
 
 <br>
 
